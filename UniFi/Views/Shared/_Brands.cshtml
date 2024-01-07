@@ -1,0 +1,236 @@
+﻿@model IEnumerable<UniFi.Models.Brand>
+
+@{
+	var count2 = 0;
+}
+<style>
+	.card-title.textc {
+		font-size: 26px;
+	}
+
+	.float-end img {
+		width: 40px !important;
+	}
+
+	.wrappers .card.text-center img {
+		width: 153px !important;
+	}
+
+	.wrappers .card.text-center .card-body .card-title.textc {
+		font-size: 20px !important;
+	}
+
+	.wrappers .card.text-center {
+		padding: 7px !important;
+	}
+	@@media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@@media (min-width: 768px) {
+
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-end.active,
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-next {
+			transform: translateX(33%);
+		}
+
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-start.active, 
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-prev {
+			transform: translateX(-33%);
+		}
+	}
+
+	#recipeCarousel2.carousel .carousel-inner .carousel-item-end,
+	#recipeCarousel2.carousel .carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+	.textc {
+		color: whitesmoke;
+	}
+
+</style>
+
+
+<div class="container text-center my-3">
+		<div class="row mx-auto my-auto justify-content-center">
+			<div id="recipeCarousel2" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+
+				<div class="clearfix">
+				<div class="float-start">
+					<h3 class="textc">BRANDS</h3>
+				</div>
+
+				<div class="float-end">
+				
+					
+				<a class="bg-transparent float-start" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+					<img src="~/images/bi_arrow-down-right-circle.svg" class="d-block w-100" alt="..."></img>
+					@*<i class="fa fa-arrow-left fa-2x p-2" aria-hidden="true" style="color: black;"></i>*@
+				</a>
+				<a class="bg-transparent float-end" href="#recipeCarousel2" role="button" data-bs-slide="next">
+					<img src="~/images/bi_arrow-down-left-circle.svg" class="d-block w-100" alt="..."></img>
+					@*<i class="fa fa-arrow-right fa-2x p-2" aria-hidden="true" style="color: black;"></i>*@
+				</a>
+
+				</div>
+				</div>
+
+				<div class="carousel-inner" role="listbox">
+@foreach (var item in Model) {
+
+			if (count2 <= 0)
+			{
+				count2++;
+
+				<div class="carousel-item active">
+					<div class="col">
+						<div class="card text-center mx-2" style="background-color: #0C072A; border-radius: 16px;">
+							<img src="@Url.Content(item.BrandImage)" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title textc">@Html.DisplayFor(modelItem => item.DisplayName)</h5>
+									<a href="@Url.Action("Home", "Brands", new { @id = item.DisplayName})" class="btn btn-primary p-2" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;">View</a>
+								</div>
+						</div>
+					</div>
+				</div>
+			}
+			else
+			{
+				<div class="carousel-item">
+					<div class="col">
+						<div class="card text-center mx-2" style="background-color: #0C072A; border-radius: 16px;">
+							<img src="@Url.Content(item.BrandImage)" class="card-img-top" alt="...">
+								<div class="card-body">
+										<h5 class="card-title textc">@Html.DisplayFor(modelItem => item.DisplayName)</h5>
+									<a href="@Url.Action("Home", "Brands", new { @id = item.DisplayName})" class="btn btn-primary p-2" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;">View</a>
+								</div>
+						</div>
+					</div>
+				</div>			
+			}
+		
+}
+					
+				</div>
+
+			</div>
+		</div>		
+	</div>
+
+
+
+
+    <script>
+
+		let container2 = document.querySelector("#recipeCarousel2");
+		let items2 = container2.querySelectorAll('.carousel .carousel-item')
+
+		items2.forEach((el2) => {
+			const minPerSlide2 = 1
+			let next2 = el2.nextElementSibling
+			for (var i=1; i<minPerSlide2; i++) {
+				if (!next2) {
+            // wrap carousel by using first child
+            next2 = items2[0]
+        }
+        let cloneChild2 = next2.cloneNode(true)
+        el2.appendChild(cloneChild2.children[0])
+        next2 = next2.nextElementSibling
+    }
+});
+
+//		let container1 = document.querySelector("#recipeCarousel1");
+//		let items1 = container1.querySelectorAll('.carousel .carousel-item')
+
+//		items1.forEach((el1) => {
+//			const minPerSlide1 = 4
+//			let next1 = el1.nextElementSibling
+//			for (var i1=1; i<minPerSlide1; i1++) {
+//				if (!next1) {
+//            // wrap carousel by using first child
+//            next1 = items1[0]
+//        }
+//        let cloneChild1 = next1.cloneNode(true)
+//        el1.appendChild(cloneChild1.children[0])
+//        next1 = next1.nextElementSibling
+//    }
+//});
+
+    </script>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Service)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Service)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@

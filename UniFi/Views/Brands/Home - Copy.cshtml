@@ -1,0 +1,427 @@
+﻿@model IEnumerable<UniFi.Models.Product>
+
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var count = 0;
+	var count1 = 0;
+}
+
+<style>
+
+	@@media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@@media (min-width: 768px) {
+
+		#recipeCarousel.carousel .carousel-inner .carousel-item-end.active,
+		#recipeCarousel.carousel .carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		#recipeCarousel.carousel .carousel-inner .carousel-item-start.active, 
+		#recipeCarousel.carousel .carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	#recipeCarousel.carousel .carousel-inner .carousel-item-end,
+	#recipeCarousel.carousel .carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+
+		#recipeCarousel1.carousel .carousel-inner .carousel-item-end.active,
+		#recipeCarousel1.carousel .carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		#recipeCarousel1.carousel .carousel-inner .carousel-item-start.active, 
+		#recipeCarousel1.carousel .carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	#recipeCarousel1.carousel .carousel-inner .carousel-item-end,
+	#recipeCarousel1.carousel .carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+	.navC{
+    color: @ViewBag.TextColor;
+}
+
+	.navC:hover{
+    color: @ViewBag.TextColor;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100vw;
+}
+
+</style>
+
+<br>
+
+
+<nav class="navbar navbar-expand-lg" style="background-color: @ViewBag.Primary; border-radius: 12px;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=""><i class="fa-solid fa-bars"></i></span>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarCenteredExample"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link navC" aria-current="page" href="@ViewBag.Web" target="_blank" rel="noopener noreferrer">Website</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link navC" href="@ViewBag.Twit" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link navC" href="@ViewBag.Disc" target="_blank" rel="noopener noreferrer">Discord</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link navC" href="@Url.Action("GenerateLink", "Home")">Generate Link</a>
+        </li>
+        
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<br>
+<div class="container-fluid">
+  <div class="row g4 justify-content-md-center">
+    <div class="col-sm-6" style="max-height: 60vh; max-width: 60vh;">
+      <div class="card h-100 text-center" style="background-color: @ViewBag.CardColor; border-radius: 16px; color: @ViewBag.TextColor">
+      <img src="@Url.Content(@ViewBag.Logo)" class="card-img-top img-responsive" alt="..." style="">
+    </div>
+    </div>
+    <div class="col-sm-6">
+     <div class="card h-100" style="background-color: @ViewBag.CardColor; border-radius: 16px; color: @ViewBag.TextColor">
+      <div class="card-body m-5">
+        <h1 class="text-center">@ViewBag.BrandName</h1>
+        <p class="card-text text-center">@ViewBag.DisText</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="m-2" style="border-radius: 16px;">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+@if (ViewBag.IMG1 != null && ViewBag.IMG1 != "")
+{
+
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+}
+@if(ViewBag.Vid != null && ViewBag.Vid != "" && ViewBag.IMG1 != null && ViewBag.IMG1 != "")
+{
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+}
+else
+{
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 3"></button>
+}
+	</div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="@Url.Content(@ViewBag.IMG)" class="d-block w-100" alt="...">
+    </div>
+
+@if(ViewBag.IMG1 != null && ViewBag.IMG1 != "")
+{
+    <div class="carousel-item">
+      <img src="@Url.Content(@ViewBag.IMG1)" class="d-block w-100" alt="...">
+    </div>
+}
+@if(ViewBag.Vid != null && ViewBag.Vid != "")
+{
+    <div class="carousel-item">
+      <iframe class="youtube-video" style="border-radius: 16px;" frameborder="0" allow="autoplay;" src="@ViewBag.Vid" allowfullscreen>
+		</iframe>
+    </div>
+}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<br>
+
+@*<iframe class="youtube-video" frameborder="0" allow="autoplay;" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" allowfullscreen>
+		</iframe>*@
+
+@*<div class="text-center">
+       <img class="" style="max-width:100%; max-height:100%;" src="@ViewBag.IMG" alt="" />
+</div>*@
+
+@*<a href="@Url.Action("GenerateLink", "Home")" class="btn btn-primary" style="background-color: #215BA0">Generate Link</a>*@
+
+@if(Model.Where(m => m.Service == false).ToList().Count() > 3)
+{
+    <div class="container text-center my-3">
+		<div class="row mx-auto my-auto">
+			<div id="recipeCarousel" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+
+				<div class="clearfix">
+				<div class="float-start">
+					<h3>PRODUCTS</h3>
+				</div>
+
+				<div class="float-end">
+				
+				<a class="bg-transparent float-start" href="#recipeCarousel" role="button" data-bs-slide="prev">
+					<img src="~/images/bi_arrow-down-right-circle.svg" class="d-block w-100" alt="..."></img>
+				</a>
+				<a class="bg-transparent float-end" href="#recipeCarousel" role="button" data-bs-slide="next">
+					<img src="~/images/bi_arrow-down-left-circle.svg" class="d-block w-100" alt="..."></img>
+				</a>
+
+				</div>
+				</div>
+				<div class="carousel-inner" role="listbox">
+@foreach (var item in Model) {
+        if (item.Service == false)
+        {
+			if (count <= 0)
+			{
+				count++;
+
+				<div class="carousel-item active" style="color: @ViewBag.TextColor">
+					<div class="col">
+						<div class="card text-center mx-2" style="background-color: @ViewBag.CardColor; border-radius: 16px;">
+							<img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+									<h5 class="card-title">$ @Html.DisplayFor(modelItem => item.Price)</h5>
+									<a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: @ViewBag.Primary; background-color: @ViewBag.Primary; color: @ViewBag.TextColor;">Add to cart</a>
+									 <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: @ViewBag.Accent; border-color: @ViewBag.Accent; border-radius: 12px; color: @ViewBag.TextColor;">View Product</a>
+								</div>
+						</div>
+					</div>
+				</div>
+			}
+			else
+			{
+				<div class="carousel-item" style="color: @ViewBag.TextColor">
+					<div class="col">
+						<div class="card text-center mx-2" style="background-color: @ViewBag.CardColor; border-radius: 16px;">
+							<img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+									<h5 class="card-title">$ @Html.DisplayFor(modelItem => item.Price)</h5>
+									<a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: @ViewBag.Primary; background-color: @ViewBag.Primary; color: @ViewBag.TextColor">Add to cart</a>
+									 <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: @ViewBag.Accent; border-color: @ViewBag.Accent; border-radius: 12px; color: @ViewBag.TextColor">View Product</a>
+								</div>
+						</div>
+					</div>
+				</div>			
+			}
+		}
+}
+					
+				</div>
+				
+			</div>
+		</div>		
+	</div>
+}
+else
+{
+    <h3>Products</h3>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+@foreach (var item in Model) {
+        if (item.Service == false)
+        {
+            <div class="col" style="color: @ViewBag.TextColor">
+                <div class="card text-center" style="background-color: @ViewBag.CardColor; border-radius: 16px;">
+                    <img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                        <h5 class="card-title">$ @Html.DisplayFor(modelItem => item.Price)</h5>
+                        <a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: @ViewBag.Primary; background-color: @ViewBag.Primary; color: @ViewBag.TextColor">Add to cart</a>
+                        <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: @ViewBag.Accent; border-color: @ViewBag.Accent; border-radius: 12px; color: @ViewBag.TextColor">View Product</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+}
+<br>
+
+@if (Model.Where(m => m.Service == true).ToList().Count() > 4)
+{
+
+    <div class="container text-center my-3">
+		<div class="row mx-auto my-auto justify-content-center">
+			<div id="recipeCarousel1" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+
+				<div class="clearfix">
+				<div class="float-start">
+					<h3>SERVICES</h3>
+				</div>
+
+				<div class="float-end">
+				
+				<a class="bg-transparent float-start" href="#recipeCarousel1" role="button" data-bs-slide="prev">
+					<img src="~/images/bi_arrow-down-right-circle.svg" class="d-block w-100" alt="..."></img>
+				</a>
+				<a class="bg-transparent float-end" href="#recipeCarousel1" role="button" data-bs-slide="next">
+					<img src="~/images/bi_arrow-down-left-circle.svg" class="d-block w-100" alt="..."></img>
+				</a>
+
+				</div>
+				</div>
+
+				<div class="carousel-inner" role="listbox">
+@foreach (var item in Model) {
+        if (item.Service == true)
+        {
+			if (count1 <= 0)
+			{
+				count1++;
+
+				<div class="carousel-item active" style="color: @ViewBag.TextColor">
+					<div class="col">
+						<div class="card text-center mx-2" style="background-color: @ViewBag.CardColor; border-radius: 16px;">
+							<img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+									<h5 class="card-title">$ @Html.DisplayFor(modelItem => item.Price)</h5>
+									<a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: @ViewBag.Primary; background-color: @ViewBag.Primary; color: @ViewBag.TextColor">Add to cart</a>
+									 <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: @ViewBag.Accent; border-color: @ViewBag.Accent; border-radius: 12px; color: @ViewBag.TextColor">View Service</a>
+								</div>
+						</div>
+					</div>
+				</div>
+			}
+			else
+			{
+				<div class="carousel-item" style="color: @ViewBag.TextColor">
+					<div class="col">
+						<div class="card text-center mx-2" style="background-color: @ViewBag.CardColor; border-radius: 16px;">
+							<img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+									<h5 class="card-title">$ @Html.DisplayFor(modelItem => item.Price)</h5>
+									<a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: @ViewBag.Primary; background-color: @ViewBag.Primary; color: @ViewBag.TextColor">Add to cart</a>
+									 <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: @ViewBag.Accent; border-color: @ViewBag.Accent; border-radius: 12px; color: @ViewBag.TextColor">View Service</a>
+								</div>
+						</div>
+					</div>
+				</div>			
+			}
+		}
+}
+					
+				</div>
+
+			</div>
+		</div>		
+	</div>
+}
+else
+{
+<h3>Services</h3>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+@foreach (var item in Model) {
+        if (item.Service == true)
+        {
+            <div class="col" style="color: @ViewBag.TextColor">
+                <div class="card text-center" style="background-color: @ViewBag.CardColor; border-radius: 16px;">
+                    <img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                        <h5 class="card-title">$ @Html.DisplayFor(modelItem => item.Price)</h5>
+                        <a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: @ViewBag.Primary; background-color: @ViewBag.Primary; color: @ViewBag.TextColor">Add to cart</a>
+                        <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: @ViewBag.Accent; border-color: @ViewBag.Accent; border-radius: 12px; color: @ViewBag.TextColor">View Service</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+}
+
+<br>
+<br>
+<br>
+
+<script>
+
+		let container = document.querySelector("#recipeCarousel");
+		let items = container.querySelectorAll('.carousel .carousel-item')
+
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+});
+
+		let container1 = document.querySelector("#recipeCarousel1");
+		let items1 = container1.querySelectorAll('.carousel .carousel-item')
+
+		items1.forEach((el1) => {
+			const minPerSlide1 = 4
+			let next1 = el1.nextElementSibling
+			for (var i=1; i<minPerSlide1; i++) {
+				if (!next1) {
+            // wrap carousel by using first child
+            next1 = items1[0]
+        }
+        let cloneChild1 = next1.cloneNode(true)
+        el1.appendChild(cloneChild1.children[0])
+        next1 = next1.nextElementSibling
+    }
+});
+
+</script>
+
+
+
+

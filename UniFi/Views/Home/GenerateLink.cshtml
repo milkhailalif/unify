@@ -1,0 +1,73 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+    .btn-copy {
+  background-color: #215BA0;
+  transition-duration: 0.4s;
+}
+
+    .btn-copy:hover{
+        background-color: #184173;
+    }
+
+    .textc {
+        color: whitesmoke;
+    }
+
+</style>
+
+<h3 class="text-center textc">Affilliate Links</h3>
+
+<div class="row d-flex justify-content-center" style="margin: 10px;">
+    <div class="col-md-8 p-3 textc" style="background-color: rgba(26,26,26,0.2); border-radius: 16px;">
+
+        
+        <label class="control-label">Affilliate Link</label>
+        <div class="input-group mb-3">
+            <input id="Main" type="text" class="form-control" value="@ViewBag.MainLink" disabled>
+            <button class="btn btn-primary btn-copy" type="button" id="buttonMain" data-clipboard-text="@ViewBag.MainLink" onclick="copyFunction(this)"><span>Copy</span></button>
+        </div>
+
+        <label class="control-label">Affilliate Link (Facebook)</label>
+        <div class="input-group mb-3">
+            <input id="Main" type="text" class="form-control" value="@ViewBag.FaceBook" disabled>
+            <button class="btn btn-primary btn-copy" type="button" id="button-addon2" data-clipboard-text="@ViewBag.FaceBook" onclick="copyFunction(this)"><span>Copy</span></button>
+        </div>
+
+        <label class="control-label">Affilliate Link (Twitter)</label>
+        <div class="input-group mb-3">
+            <input id="Main" type="text" class="form-control" value="@ViewBag.Twitter" disabled>
+            <button class="btn btn-primary btn-copy" type="button" id="button-addon2" data-clipboard-text="@ViewBag.Twitter" onclick="copyFunction(this)"><span>Copy</span></button>
+        </div>
+
+        <label class="control-label">Affilliate Link (Instagram)</label>
+        <div class="input-group mb-3">
+            <input id="Main" type="text" class="form-control" value="@ViewBag.Instagram" disabled>
+            <button class="btn btn-primary btn-copy" type="button" id="button-addon2" data-clipboard-text="@ViewBag.Instagram" onclick="copyFunction(this)"><span>Copy</span></button>
+        </div>
+
+        <label class="control-label">Affilliate Link (Youtube)</label>
+        <div class="input-group mb-3">
+            <input id="Main" type="text" class="form-control" value="@ViewBag.Youtube" disabled>
+            <button class="btn btn-primary btn-copy" type="button" id="button-addon2" data-clipboard-text="@ViewBag.Youtube" onclick="copyFunction(this)"><span>Copy</span></button>
+        </div>
+        
+
+    </div> 
+</div>
+
+<script>
+    function copyFunction(element) {
+  let span = element.querySelector("span");
+  span.innerHTML = "Copied!";
+  setTimeout(function() {
+    span.innerHTML = "Copy";
+  }, 1000);
+}
+   
+
+</script>

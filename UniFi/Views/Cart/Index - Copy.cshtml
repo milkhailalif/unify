@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<h3>Cart</h3>
+<h3>Total: $@ViewBag.total</h3>
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+@foreach (var item in ViewBag.cart) {
+
+            <div class="col" style="color: white">
+                <div class="card text-center" style="background-color: #0C072A; border-radius: 16px;">
+                    <img src="@Url.Content(@item.Product.Image)" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Product.Name</h5>
+                        <h5 class="card-title">$ @item.Product.Price</h5>
+                        <p class="card-title">QTY:  @item.Quantity</p>
+                        <a asp-controller="cart" asp-action="remove" asp-route-id="@item.Product.Id" class="btn btn-primary" style="border-radius: 12px; border-color: #EB4823; background-color: #FCD9BB; color: #EB4823;">Remove</a>
+					</div>
+                </div>
+            </div>
+}
+</div>
+
+
+
+    @*<table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <th>Option</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Photo</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Sub Total</th>
+        </tr>
+        @foreach (var item in ViewBag.cart)
+        {
+        <tr>
+            <tr>
+                <td class="d-lg-table-cell"><a asp-controller="cart" asp-action="remove" asp-route-id="@item.Product.Id">Remove</a> </td>
+                <td class="d-lg-table-cell">@item.Product.Id</td>
+                <td class="d-lg-table-cell">@item.Product.Name</td>
+                <td class="d-lg-table-cell"><img src="@Url.Content(@item.Product.Image)" width="100" /> </td>
+                <td class="d-lg-table-cell">@item.Product.Price</td>
+                <td class="d-lg-table-cell">@item.Quantity</td>
+                <td class="d-lg-table-cell">@(item.Product.Price * item.Quantity )</td>
+            </tr>
+        </tr>
+        }
+        <tr>
+            <td align="right" colspan="6">Sum</td>
+            <td>
+                @ViewBag.total
+            </td>
+        </tr>
+    </table>*@
+    <br />

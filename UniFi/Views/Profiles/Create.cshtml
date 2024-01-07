@@ -1,0 +1,263 @@
+﻿@model UniFi.Models.Profile
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sign Up</title>
+
+
+
+
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/all.min.css" rel="stylesheet">
+    <link href="~/assets/css/fontawesome.css" rel="stylesheet">
+    <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/assets/css/venobox.min.css" rel="stylesheet">
+    <link href="~/assets/css/aos.css" rel="stylesheet">
+    <link href="~/assets/css/animate.css" rel="stylesheet">
+    <link href="~/assets/css/nice-select.css" rel="stylesheet">
+    <link href="~/assets/css/slick.css" rel="stylesheet">
+    <link href="~/assets/css/default.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--    contact-area-start-->
+    <div class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-box">
+                        <form asp-action="Create" class="m-5 textc">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="contact-slider owl-carousel">
+                             
+
+                            <div class="single-contact">
+                                
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <div class="contact-input" style="display: none">
+                                        <label asp-for="UserId" class="control-label"></label>
+                                        <input asp-for="UserId" class="form-control" value="n" />
+                                        <span asp-validation-for="UserId" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input" style="display: none">
+                                        <label asp-for="EmailAdd" class="control-label"></label>
+                                        <input asp-for="EmailAdd" class="form-control" value="n" />
+                                        <span asp-validation-for="EmailAdd" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="FullName"></label>
+                                        <input asp-for="FullName"/>
+                                        <span asp-validation-for="FullName" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input" style="display: none">
+                                        <label asp-for="Wallet" class="control-label"></label>
+                                        <input asp-for="Wallet" class="form-control" value="n" />
+                                        <span asp-validation-for="Wallet" class="text-danger"></span>
+                                    </div>
+                                
+                            </div>
+                            <div class="single-contact">
+                                
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="TwitterUsername"></label>
+                                        <input asp-for="TwitterUsername"/>
+                                        <span asp-validation-for="TwitterUsername" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="DiscordUsername"></label>
+                                        <input asp-for="DiscordUsername"/>
+                                        <span asp-validation-for="DiscordUsername" class="text-danger"></span>
+                                    </div>
+                                
+                            </div>
+                            <div class="single-contact">
+                                
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="CompanyName"></label>
+                                        <input asp-for="CompanyName"/>
+                                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="CompanyAge"></label>
+                                        <input asp-for="CompanyAge"/>
+                                        <span asp-validation-for="CompanyAge" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="CompanyDetails"></label>
+                                        <input asp-for="CompanyDetails"/>
+                                        <span asp-validation-for="CompanyDetails" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Website"></label>
+                                        <input asp-for="Website"/>
+                                        <span asp-validation-for="Website" class="text-danger"></span>
+                                    </div>
+                                
+                            </div>
+                            <div class="single-contact">
+                                
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Twitter"></label>
+                                        <input asp-for="Twitter"/>
+                                        <span asp-validation-for="Twitter" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Facebook"></label>
+                                        <input asp-for="Facebook"/>
+                                        <span asp-validation-for="Facebook" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Instagram"></label>
+                                        <input asp-for="Instagram"/>
+                                        <span asp-validation-for="Instagram" class="text-danger"></span>
+                                    </div>
+                                
+                            </div>
+                            <div class="single-contact">
+                                
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="DiscordInvite"></label>
+                                        <input asp-for="DiscordInvite"/>
+                                        <span asp-validation-for="DiscordInvite" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input" style="display: none">
+                                        <label asp-for="Logo"></label>
+                                        <input asp-for="Logo" class="form-control" value="n" />
+                                        <span asp-validation-for="Logo" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Country"></label>
+                                        <input asp-for="Country" />
+                                        <span asp-validation-for="Country" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="City"></label>
+                                        <input asp-for="City"/>
+                                        <span asp-validation-for="City" class="text-danger"></span>
+                                    </div>
+                                
+                                    
+                                        <input type="submit" value="Save" class="saveBTN" />
+                                    
+                            </div>
+                            
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    contact-area-end-->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/Popper.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/venobox.min.js"></script>
+    <script src="~/assets/js/aos.js"></script>
+    <script src="~/assets/js/jquery.sticky.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/jquery.nice-select.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script>
+        $(".contact-slider").owlCarousel({
+            items: 1,
+            nav: true,
+            dot: true,
+            navText: ['Previous', 'Next'],
+            loop: false,
+            stagePadding: 0,
+            margin: 10,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            smartSpeed: 1000,
+            autoHeight: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                768: {
+                    items: 1,
+
+                },
+                1000: {
+                    items: 1,
+
+                }
+            },
+            URLhashListener: true,
+            autoplayHoverPause: true,
+            startPosition: "URLHash",
+            onTranslate: function(e) {
+                $(".owl-item").removeClass("highlighted");
+            },
+            onTranslated: function(e) {
+                $(".owl-item").eq(e.item.index).addClass("highlighted");
+            },
+
+
+        });
+
+        $('.owl-carousel').on('changed.owl.carousel', function (e) {
+
+            $('button.owl-next').removeAttr('disabled');
+            $('button.owl-prev').removeAttr('disabled');
+
+
+
+            if ((e.page.index + 1) >= e.page.count) {
+                $('button.owl-next').attr('disabled', 'disabled');
+                $('button.owl-prev').addClass('disabled');
+            } else {
+                $('button.owl-next').removeAttr('disabled');
+            }
+
+            if (e.page.index == 0) {
+                $('button.owl-prev').attr('disabled', 'disabled');
+            } else {
+                $('button.owl-prev').removeAttr('disabled');
+            }
+            
+
+        });
+
+    </script>
+    <script src="~/assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

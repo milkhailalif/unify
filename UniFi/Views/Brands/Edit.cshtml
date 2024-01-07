@@ -1,0 +1,117 @@
+﻿@model UniFi.Models.Brand
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .textc {
+        color: whitesmoke;
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(1, 69, 148, 1); margin: 10px; border-radius: 8px;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarCenteredExample"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="@Url.Action("BrandDashboard", "Profiles")">Dashboard</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="@Url.Action("Index", "BrandProducts")">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Settings</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="@Url.Action("Edit", "Profiles")">Details</a>
+        </li>
+        
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+
+<h2 class="text-center textc">Settings</h2>
+<hr />
+<div class="row d-flex justify-content-center" style="margin: 10px;">
+    <div class="col-md-8" style="background-color: #0C072A; border-radius: 16px;">
+        <form asp-action="Edit" class="m-4 textc">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                @*<label asp-for="UserId" class="control-label"></label>*@
+                <input asp-for="UserId" class="form-control" type="hidden"/>
+                <input asp-for="DisplayName" class="form-control" type="hidden"/>
+                @*<span asp-validation-for="UserId" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <label asp-for="DisplayText" class="control-label"></label>
+                <input asp-for="DisplayText" class="form-control" />
+                <span asp-validation-for="DisplayText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrimaryColor" class="control-label"></label>
+                <input asp-for="PrimaryColor" class="form-control form-control-color" type="color"/>
+                <span asp-validation-for="PrimaryColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccentColor" class="control-label"></label>
+                <input asp-for="AccentColor" class="form-control form-control-color" type="color"/>
+                <span asp-validation-for="AccentColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TextColor" class="control-label"></label>
+                <input asp-for="TextColor" class="form-control form-control-color" type="color"/>
+                <span asp-validation-for="TextColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BackgroundColor" class="control-label"></label>
+                <input asp-for="BackgroundColor" class="form-control form-control-color" type="color"/>
+                <span asp-validation-for="BackgroundColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BackgroundImage" class="control-label"></label>
+                <input asp-for="BackgroundImage" class="form-control" />
+                <span asp-validation-for="BackgroundImage" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="BackgroundImage1" class="control-label"></label>
+                <input asp-for="BackgroundImage1" class="form-control" />
+                <span asp-validation-for="BackgroundImage1" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="BackgroundVideo" class="control-label"></label>
+                <input asp-for="BackgroundVideo" class="form-control" />
+                <span asp-validation-for="BackgroundVideo" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group text-center">
+                <input type="submit" value="Save" class="btn btn-primary" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

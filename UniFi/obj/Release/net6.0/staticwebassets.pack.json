@@ -1,0 +1,1213 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\UniFi.bundle.scp.css",
+      "PackagePath": "staticwebassets\\UniFi.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\404.html",
+      "PackagePath": "staticwebassets\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\119.c1ceb3b548a29623.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\119.c1ceb3b548a29623.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\194-e7fa16fbd0a01628.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\194-e7fa16fbd0a01628.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\409.997e41562dc5955e.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\409.997e41562dc5955e.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\503.a0ddd4640f082850.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\503.a0ddd4640f082850.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\525.02232b4389f6c728.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\525.02232b4389f6c728.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\752.fe28efc54f4b40b7.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\752.fe28efc54f4b40b7.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\8015bd09-017fc6812a387b1d.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\8015bd09-017fc6812a387b1d.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\ec5020c3.9f7f47b32699699c.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\ec5020c3.9f7f47b32699699c.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\f0d6a91d-774eaa9e5a6dd399.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\f0d6a91d-774eaa9e5a6dd399.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\fec483df.d91dc10546e50732.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\fec483df.d91dc10546e50732.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\framework-3a998f3a23c1db10.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\framework-3a998f3a23c1db10.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\main-18598cceffbdea39.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\main-18598cceffbdea39.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\pages\\_app-0363e21420244f5d.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\pages\\_app-0363e21420244f5d.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\pages\\_error-c3101dbfeee25159.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\pages\\_error-c3101dbfeee25159.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\pages\\index-bf0bf7e9cbbc76a8.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\pages\\index-bf0bf7e9cbbc76a8.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\polyfills-c67a75d1b6f99dc8.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\polyfills-c67a75d1b6f99dc8.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\chunks\\webpack-a72dc900ccaa9968.js",
+      "PackagePath": "staticwebassets\\_next\\static\\chunks\\webpack-a72dc900ccaa9968.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\css\\050d93d2f3497ec3.css",
+      "PackagePath": "staticwebassets\\_next\\static\\css\\050d93d2f3497ec3.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\css\\27d177a30947857b.css",
+      "PackagePath": "staticwebassets\\_next\\static\\css\\27d177a30947857b.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\vAGSrny6XigkF6yCoZZTB\\_buildManifest.js",
+      "PackagePath": "staticwebassets\\_next\\static\\vAGSrny6XigkF6yCoZZTB\\_buildManifest.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\_next\\static\\vAGSrny6XigkF6yCoZZTB\\_ssgManifest.js",
+      "PackagePath": "staticwebassets\\_next\\static\\vAGSrny6XigkF6yCoZZTB\\_ssgManifest.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\default.css",
+      "PackagePath": "staticwebassets\\assets\\css\\default.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\jquery.nice-number.css",
+      "PackagePath": "staticwebassets\\assets\\css\\jquery.nice-number.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\meanmenu.css",
+      "PackagePath": "staticwebassets\\assets\\css\\meanmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\smooth-scrollbar.css",
+      "PackagePath": "staticwebassets\\assets\\css\\smooth-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\css\\venobox.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\venobox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Black.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Black.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-BlackItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-BlackItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-BlackItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-BlackItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Bold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Bold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-BoldItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-BoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-BoldItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-BoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-ExtraBold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-ExtraBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-ExtraBold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-ExtraBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-ExtraBoldItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-ExtraBoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-ExtraBoldItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-ExtraBoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Heavy.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Heavy.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Heavy.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Heavy.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-HeavyItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-HeavyItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-HeavyItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-HeavyItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Light.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Light.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-LightItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-LightItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-LightItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-LightItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Medium.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Medium.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-MediumItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-MediumItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-MediumItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-MediumItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Regular.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Regular.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-RegularItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-RegularItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-RegularItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-RegularItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-SemiBold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-SemiBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-SemiBold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-SemiBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-SemiBoldItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-SemiBoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-SemiBoldItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-SemiBoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Thin.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-Thin.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-ThinItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-ThinItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-ThinItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-ThinItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-UltraLight.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-UltraLight.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-UltraLight.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-UltraLight.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-UltraLightItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-UltraLightItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\Gilroy-UltraLightItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gilroy-UltraLightItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\RusticLoveTattoo.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\RusticLoveTattoo.otf"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\arrow-lft.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\arrow-lft.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\arrow-right.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\arrow-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\b.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\b.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\d1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\d1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\d2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\d2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\d3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\d3.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\d4.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\d4.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\Chart 2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\Chart 2.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\click.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\click.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\d1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\d1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\d2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\d2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\d3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\d3.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\l1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\l1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\l2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\l2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\l3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\l3.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\p.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\p.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\p1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\p1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\p2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\p2.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\s1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\s1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\s2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\s2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\s3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\s3.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\sl1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\sl1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\sl2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\sl2.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\small-watch.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\small-watch.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\dashboard-page\\source.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dashboard-page\\source.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\facebook.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\facebook.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\Hello.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\Hello.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\Location.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\Location.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\Music note.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\Music note.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\Notification.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\Notification.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\Smart.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\Smart.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\Telephone.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\Telephone.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\b1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\b1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\b2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\b2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feature\\b3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\b3.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feedback\\fbg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\feedback\\fbg.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feedback\\feedback-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\feedback\\feedback-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feedback\\p1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\feedback\\p1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\feedback\\w1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\feedback\\w1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\footer-logo.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\footer-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\hero--bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero--bg.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\hero--img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero--img.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\index-carousel.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\index-carousel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\index-overlay.png",
+      "PackagePath": "staticwebassets\\assets\\img\\index-overlay.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\instragram.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\instragram.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\j1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\j1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\j2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\j2.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\j3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\j3.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\j4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\j4.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\join.png",
+      "PackagePath": "staticwebassets\\assets\\img\\join.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\new-page\\b1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\new-page\\b1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\new-page\\b2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\new-page\\b2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\new-page\\b3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\new-page\\b3.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\new-page\\b4.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\new-page\\b4.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\p2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p2.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\play-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\play-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\play2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\play2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\popular-overlay.png",
+      "PackagePath": "staticwebassets\\assets\\img\\popular-overlay.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\product\\contact-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\contact-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\product\\man.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\man.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\product\\p-hero.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\p-hero.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\product\\p1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\p1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\product\\pp1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\pp1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\product\\readio-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\readio-img.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\product\\reg-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\reg-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\profile.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\raimond-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\raimond-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\star.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\star.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\user.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\video-overlay.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video-overlay.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\video__img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video__img.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\w1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\w1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\w1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\w1.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\w2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\w2.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\w2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\w2.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\w3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\w3.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\w3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\w3.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\w4.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\w4.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\img\\watch.png",
+      "PackagePath": "staticwebassets\\assets\\img\\watch.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\Popper.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Popper.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\jquery.meanmenu.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.meanmenu.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\jquery.nice-number.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-number.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\jquery.nice-select.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-select.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.sticky.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\smooth-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\js\\venobox.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\venobox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-light-300.eot",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-light-300.eot"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-light-300.svg",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-light-300.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-light-300.ttf"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-light-300.woff",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-light-300.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\assets\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\css\\app.ea6cec6d.css",
+      "PackagePath": "staticwebassets\\css\\app.ea6cec6d.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\fallbackImage.jpg",
+      "PackagePath": "staticwebassets\\fallbackImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\1.png",
+      "PackagePath": "staticwebassets\\images\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\4.png",
+      "PackagePath": "staticwebassets\\images\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\5.png",
+      "PackagePath": "staticwebassets\\images\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\6.png",
+      "PackagePath": "staticwebassets\\images\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\9.png",
+      "PackagePath": "staticwebassets\\images\\9.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\a1.gif",
+      "PackagePath": "staticwebassets\\images\\a1.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\a11.gif",
+      "PackagePath": "staticwebassets\\images\\a11.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\a2.gif",
+      "PackagePath": "staticwebassets\\images\\a2.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\a2.ico",
+      "PackagePath": "staticwebassets\\images\\a2.ico"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\bi_arrow-down-left-circle.svg",
+      "PackagePath": "staticwebassets\\images\\bi_arrow-down-left-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\bi_arrow-down-right-circle.svg",
+      "PackagePath": "staticwebassets\\images\\bi_arrow-down-right-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\blank.png",
+      "PackagePath": "staticwebassets\\images\\blank.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\incubator.gif",
+      "PackagePath": "staticwebassets\\images\\incubator.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\logoplc.png",
+      "PackagePath": "staticwebassets\\images\\logoplc.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\oneLink.jpg",
+      "PackagePath": "staticwebassets\\images\\oneLink.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\onlySubs.jpg",
+      "PackagePath": "staticwebassets\\images\\onlySubs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\pfp.png",
+      "PackagePath": "staticwebassets\\images\\pfp.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\spritesHypeBG.gif",
+      "PackagePath": "staticwebassets\\images\\spritesHypeBG.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\spritesVibesBG.gif",
+      "PackagePath": "staticwebassets\\images\\spritesVibesBG.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\thor.jpg",
+      "PackagePath": "staticwebassets\\images\\thor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\unifiAnimation.gif",
+      "PackagePath": "staticwebassets\\images\\unifiAnimation.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\unifiAnimationFirst.gif",
+      "PackagePath": "staticwebassets\\images\\unifiAnimationFirst.gif"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\images\\watch.png",
+      "PackagePath": "staticwebassets\\images\\watch.png"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\app.js.map",
+      "PackagePath": "staticwebassets\\js\\app.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\app1.js",
+      "PackagePath": "staticwebassets\\js\\app1.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\app1.js.map",
+      "PackagePath": "staticwebassets\\js\\app1.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\chunk-vendors.js",
+      "PackagePath": "staticwebassets\\js\\chunk-vendors.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\chunk-vendors.js.map",
+      "PackagePath": "staticwebassets\\js\\chunk-vendors.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\chunk-vendors1.js",
+      "PackagePath": "staticwebassets\\js\\chunk-vendors1.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\chunk-vendors1.js.map",
+      "PackagePath": "staticwebassets\\js\\chunk-vendors1.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\sense\\Documents\\GitHub\\Unify\\UniFi\\wwwroot\\vercel.svg",
+      "PackagePath": "staticwebassets\\vercel.svg"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.UniFi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.UniFi.props",
+      "PackagePath": "build\\UniFi.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.UniFi.props",
+      "PackagePath": "buildMultiTargeting\\UniFi.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.UniFi.props",
+      "PackagePath": "buildTransitive\\UniFi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

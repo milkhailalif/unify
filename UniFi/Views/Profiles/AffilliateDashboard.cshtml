@@ -1,0 +1,283 @@
+﻿@model IEnumerable<UniFi.Models.AffiliateBrandLink>
+
+@{
+    ViewData["Title"] = "AffilliateDashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .textc {
+        color: whitesmoke;
+    }
+
+</style>
+
+<h1 class="text-center textc">Affilliate Dashboard</h1>
+
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+  <div class="col">
+
+    <div class="card text-center h-100" style="background-color: #0C072A; border-radius: 16px;">
+
+      <div class="card-body">
+        <h5 class="card-title textc">Total Clicks</h5>
+        <br>
+        @if(ViewBag.TotalClicks < 1000)
+        {
+           <h1 class="card-text" style="color: #FF840E; font-size: 150px;">@ViewBag.TotalClicks</h1>
+        }
+        else if(ViewBag.TotalClicks < 10000)
+        {
+            var rndNum = ViewBag.TotalClicks / 1000.0;
+
+           <h1 class="card-text" style="color: #FF840E; font-size: 150px;">@rndNum.ToString("0.0") K</h1>         
+        }
+        else if(ViewBag.TotalClicks < 100000)
+        {
+            var rndNum = ViewBag.TotalClicks / 1000.0;
+           <h1 class="card-text" style="color: #FF840E; font-size: 125px;">@rndNum.ToString("0.0") K</h1>         
+        }
+        else if(ViewBag.TotalClicks < 1000000)
+        {
+            var rndNum = ViewBag.TotalClicks / 1000.0;
+           <h1 class="card-text" style="color: #FF840E; font-size: 100px;">@rndNum.ToString("0.0") K</h1>         
+        }
+        else if(ViewBag.TotalClicks >= 1000000)
+        {
+            var rndNum = ViewBag.TotalClicks / 1000000.0;
+           <h1 class="card-text" style="color: #FF840E; font-size: 100px;">@rndNum.ToString("0.0") M</h1>         
+        }
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="background-color: #0C072A; border-radius: 16px;">
+      <div class="card-body">
+        <h5 class="card-title text-center textc">Top Brands</h5>
+        <ul class="list-group list-group-flush">
+                    @if (ViewBag.Affiliates.Count > 0)
+                    {
+                        <li class="list-group-item" style="background-color: #0C072A; color: white;"><span class="float-start">Name</span><span class="float-end" style="color: #FF840E;">Clicks</span> </li>
+                        <hr>
+                        foreach (var item in ViewBag.Affiliates)
+                        {
+                            <li class="list-group-item" style="background-color: #0C072A; color: white;"><span class="float-start">@item.name</span><span class="float-end" style="color: #FF840E;">@item.count</span> </li>
+                        }
+                    }
+        </ul>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card text-center" style="background-color: #0C072A; border-radius: 16px;">
+      <div class="card-body">
+        <h5 class="card-title text-center textc">Top Product Clicks</h5>
+        <ul class="list-group list-group-flush">
+                    @if (ViewBag.ProductClicks.Count > 0)
+                    {
+                        <li class="list-group-item" style="background-color: #0C072A; color: white;"><span class="float-start">Name</span><span class="float-end" style="color: #FF840E;">Clicks</span> </li>
+                        <hr>
+                        foreach (var item in ViewBag.ProductClicks)
+                        {
+                            <li class="list-group-item" style="background-color: #0C072A; color: white;"><span class="float-start">@item.name</span><span class="float-end" style="color: #FF840E;">@item.count</span> </li>
+                        }
+                    }
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row g-4" style="margin: 10px;">
+  <div class="col-sm-6">
+    <div class="card" style="background-color: #0C072A; border-radius: 16px;">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title text-center textc">Clicks</h5>
+        <canvas style="m-auto" id="myChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card" style="background-color: #0C072A; border-radius: 16px;">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title text-center textc">Clicks Per Day</h5>
+        <canvas class="mt-auto" id="myChart1"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card" style="background-color: #0C072A; border-radius: 16px;">
+      <div class="card-body d-flex flex-column">
+        <h3 class="card-title text-center textc">Connected Wallet</h3>
+        <hr>
+        <h5 class="card-title text-center" style="color: #FF840E;">@ViewBag.Wallet</h5>
+        <br>
+        <div class="text-center">
+        <a href="@Url.Action("ConnectWallet", "Profiles")" class="btn btn-primary p-2" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;">Change Wallet</a>
+        </div>  
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+    const ctx = document.getElementById('myChart');
+    const ctx1 = document.getElementById('myChart1');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+  labels: [
+      'Main',
+      'FaceBook',
+      'Twitter',
+      'Instagram',
+      'Youtube'
+    
+  ],
+  datasets: [{
+    label: 'Clicks',
+    data: [@ViewBag.MainLinkClicks, @ViewBag.FBClicks, @ViewBag.TwClicks, @ViewBag.InstaClicks, @ViewBag.YTClicks],
+    backgroundColor: [
+      'rgb(235, 72, 35)',
+      'rgb(33, 91, 160)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)',
+      'rgb(255, 99, 132)'
+      
+    ],
+    hoverOffset: 4
+  }]},
+  options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: 'White',
+        }
+      }
+    }
+  }
+  });
+
+
+  var lbls = new Array();
+        var array = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.Days))');
+        for(var i =0; i<array.length;i++){
+            lbls[i] = array[i];
+        } 
+
+var dts = new Array();
+        var array1 = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.DaysData))');
+        for(var i =0; i<array1.length;i++){
+            dts[i] = array1[i];
+        } 
+
+
+  new Chart(ctx1, {
+    type: 'bar',
+    data: {labels: [
+    lbls[6],
+    lbls[5],
+    lbls[4],
+    lbls[3],
+    lbls[2],
+    lbls[1],
+    lbls[0]
+  ],
+  datasets: [{
+    label: 'Clicks',
+    data: [dts[6], dts[5], dts[4], dts[3], dts[2], dts[1], dts[0]],
+    backgroundColor: [
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 159, 64, 0.2)'
+    ],
+    borderColor: [
+      'rgb(255, 159, 64)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 159, 64)'
+    ],
+    borderWidth: 1
+  }]}
+  });
+
+</script>
+
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BrandPage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Visitor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AffiliateCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AffiliateUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrandPage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Visitor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AffiliateCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AffiliateUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@

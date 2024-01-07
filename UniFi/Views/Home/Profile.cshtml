@@ -1,0 +1,145 @@
+﻿@model UniFi.Models.UserProfile
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* <h1>Profile</h1>
+
+<h4>UserProfile</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Profile">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label" type="hidden"></label>
+                <input asp-for="UserId" class="form-control" type="hidden" />
+                <span asp-validation-for="UserId" class="text-danger" type="hidden"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PFPUrl" class="control-label"></label>
+                <input asp-for="PFPUrl" class="form-control" />
+                <span asp-validation-for="PFPUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bio" class="control-label"></label>
+                <input asp-for="Bio" class="form-control" />
+                <span asp-validation-for="Bio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+ *@
+
+
+    <!-- profile-area-start -->
+    <div class="profile-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="profile-title">
+                        <h3>My Profile </h3>
+                    </div>
+                <div class="profile-top-btn">
+                    @if(ViewBag.Brand == "False")
+                    {
+                        <a href="@Url.Action("BrandDashboard", "Profiles")">Generate Brand Page</a>
+                        <a href="@Url.Action("AffilliateDashboard", "Profiles")">Affiliaite Dashboard</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Home", "Brands", new { id = @ViewBag.BrandName })">My Brand Page</a>
+                        <a href="@Url.Action("BrandDashboard", "Profiles")">Brand Dashboard</a>
+                        <a href="@Url.Action("AffilliateDashboard", "Profiles")">Affiliaite Dashboard</a>
+                        <a href="@Url.Action("Index", "BrandProducts")">My Products and Services</a>
+                    }
+                </div>
+                    <div class="profile-fl">
+                        <div class="sat-fl">
+                            <div class="set-title">
+                                <h3>General Information</h3>
+                            </div>
+                            <div class="profile-user-fl">
+                                <div class="set-user">
+                                <a href="#"><img src="@ViewBag.PFP" alt=""></a>
+
+                                            @* <div class="profile-user-text">
+                                                <h3>PFP</h3>
+                                            </div> *@
+                                </div>
+                               @*  <div class="prof-price">
+                                    <div class="prof-single-price">
+                                        <span>$300</span>
+                                        <p>Next Commission payout</p>
+                                    </div>
+                                    <div class="prof-single-price prof-price2">
+                                        <span>$594</span>
+                                        <p>Next Sales Pay Out</p>
+                                    </div>
+                                </div> *@
+                            </div>
+                            <div class="set-form">
+                            <form asp-action="Profile">
+                                <input type="hidden" asp-for="Id" />
+                                <div class="form-group">
+                                    <input asp-for="UserId" class="form-control" type="hidden" />
+                                </div>
+                                <div class="prof-input-fl">
+                                    <div class="prof-input-lfet">
+                                        
+                                        <div class="single-set-input">
+                                            <p style="color: white">Username</p>
+                                            @* <input type="text" value="@ViewBag.Id" disabled> *@
+                                            <p style="color: white;font-weight: bold;font-size: large;">@ViewBag.Id</p>
+                                            @* <input type="text" value="@ViewBag.Id" disabled> *@
+                                        </div>
+                                        <div class="single-set-input">
+                                            <p style="color: white">Email</p>
+                                            @* <input type="email" value="@ViewBag.Email" disabled> *@
+                                            <p style="color: white;font-weight: bold;font-size: large;">@ViewBag.Email</p>
+                                            @* <input type="email" value="@ViewBag.Email" disabled> *@
+                                        </div>
+                                        <div class="single-set-input">
+                                            <p style="color: white">PFP Url</p>
+                                            <input asp-for="PFPUrl" />
+                                        </div>
+                                    </div>
+                                    <div class="prof-input-ri">
+                                        <h3>Wallet</h3>
+                                        <a href="#">@ViewBag.Wallet</a>
+                                        <a href="@Url.Action("ConnectWallet", "Profiles")" class="btn btn-primary p-2" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;">Change Wallet</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="single-set-input wd">
+                                    <p style="color: white">Bio</p>
+                                    <textarea cols="30" rows="10" asp-for="Bio"></textarea>
+                                </div>
+                                <div class="set-btn">
+                                    <button type="submit">Save Changes</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- profile-area-end -->
+
+    
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    var pfp = await Component.InvokeAsync("Pfp");
+    <div class="main__header__menu main__ri--menu">
+        <ul>
+            @* <li style="pointer-events: none; opacity: 0;"><a href="#!">Profile</a></li> *@
+            <li><a href="@Url.Action("Profile", "Home")">@User.Identity?.Name</a></li>
+        </ul>
+    </div>
+    <div class="main___header__btn">
+        <div class="set-user2">
+            <a href="#"><img src="@pfp" alt=""></a>
+        </div>
+        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post">
+            <button type="submit" class="log__bt">Logout</button>
+        </form>
+    </div>
+    @* <a class="p-2" style="color: whitesmoke;" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity?.Name!</a> *@
+
+    @* <a class="p-2" style="color: whitesmoke;">@User.Identity?.Name!</a> *@
+    @* <a class="log__bt" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">Logout</a> *@
+    
+}
+else
+{
+    <div class="main__header__menu main__ri--menu">
+        <ul>
+            <li style="pointer-events: none; opacity: 0;"><a href="#!">Profile Page</a></li>
+        </ul>
+    </div>
+    <div class="main___header__btn">
+    <a class="log__bt" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    <a class="sign__bt" asp-area="Identity" asp-page="/Account/Register">Sign Up</a>
+    </div>
+}
+

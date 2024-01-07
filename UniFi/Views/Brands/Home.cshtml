@@ -1,0 +1,310 @@
+﻿@model IEnumerable<UniFi.Models.Product>
+
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/all.min.css" rel="stylesheet">
+    <link href="~/assets/css/fontawesome.css" rel="stylesheet">
+    <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/assets/css/venobox.min.css" rel="stylesheet">
+    <link href="~/assets/css/aos.css" rel="stylesheet">
+    <link href="~/assets/css/nice-select.css" rel="stylesheet">
+    <link href="~/assets/css/animate.css" rel="stylesheet">
+    <link href="~/assets/css/slick.css" rel="stylesheet">
+    <link href="~/assets/css/default.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <style>
+        .youtube-video {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+        }
+
+        .navC {
+            color: @ViewBag.TextColor;
+        }
+
+            .navC:hover {
+                color: @ViewBag.TextColor;
+            }
+    </style>
+
+
+    <nav class="navbar navbar-expand-lg" style="background-color: @ViewBag.NavCol; border-radius: 8px; margin: 30px;">
+        
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center"
+                 id="navbarCenteredExample">
+
+                <a class="navbar-brand p-0" href="#">
+                    <img src="@Url.Content(@ViewBag.Logo)" alt="" width="80" height="80">
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link navC" aria-current="page" href="@ViewBag.Web" target="_blank" rel="noopener noreferrer">Website</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link navC" href="@ViewBag.Twit" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link navC" href="@ViewBag.Disc" target="_blank" rel="noopener noreferrer">Discord</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link navC" href="@Url.Action("GenerateLink", "Home")">Generate Link</a>
+                    </li>
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+    <!--video--area--start-->
+    <div class="video__Area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video__wrap">
+                        <div class="video__active">
+                            <div class="video__single" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                <div class="video__link">
+                                    <iframe class="youtube-video" style="border-radius: 16px;" frameborder="0" allow="autoplay;" src="@ViewBag.Vid" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="video__single" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                <div class="video__link">
+                                    <span class="video-img"><img src="@Url.Content(@ViewBag.IMG)" alt=""></span>
+
+                                </div>
+                            </div>
+                            <div class="video__single" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                <div class="video__link">
+                                    <span class="video-img"><img src="@Url.Content(@ViewBag.IMG1)" alt=""></span>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--video--area--end-->
+
+    <!--seller--aera--start-->
+    <div class="seller__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="seller__wrap" style="background-color: @ViewBag.CardColor; color: @ViewBag.TextColor">
+                        <h3 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100" style="color: @ViewBag.TextColor">@ViewBag.BrandName</h3>
+                        <div class="seller__fx">
+                            @* <div class="seller__profile__box" data-aos="fade-up" data-aos-delay="150"
+                                 data-aos-duration="1100" style="background: @Html.Raw(@ViewBag.Primary);">
+                                <div class="user__icon" data-aos="zoom-in" data-aos-delay="400"
+                                     data-aos-duration="1400">
+                                    <span><img src="@Url.Content(@ViewBag.Logo)" alt=""></span>
+                                </div>
+                                <h4>Seller Level</h4>
+                                <a href="#">Marketer Level</a>
+                            </div> *@
+                            <div class="seller_about__box" data-aos="fade-down" data-aos-delay="200"
+                                 data-aos-duration="1200" style="background: @Html.Raw(@ViewBag.Accent);">
+                                <h4 style="color: @ViewBag.TextColor">About Us</h4>
+                                <p style="color: @ViewBag.TextColor">
+                                    @ViewBag.DisText
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--seller--aera--end-->
+
+    <!--product-area--start-->
+    @if (Model.Where(m => m.Service == false).ToList().Count() > 0)
+    {
+    <div class="product__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product__wrap">
+                        <div class="product__top">
+                            <div class="benefit__tile product__title" data-aos="zoom-in" data-aos-delay="100"
+                                 data-aos-duration="1100">
+                                <h2>POPULAR PRODUCTS</h2>
+                            </div>
+
+                        </div>
+                        <div class="product__slider">
+                            <div class="product__active owl-carousel">
+                                @foreach (var item in Model) {
+                                    if (item.Service == false)
+                                    {
+                                <div class="product__img" data-aos="fade-up" data-aos-delay="50"
+                                     data-aos-duration="1000">
+                                        <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })"><img src="@Url.Content(item.Image)" alt=""></a>
+                                </div>
+                                    }
+                                }
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    <!--product-area--end-->
+    <!--product-area--start-->
+    @if (Model.Where(m => m.Service == true).ToList().Count() > 0)
+    {
+    <div class="product__area product__Aera-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product__wrap">
+                        <div class="product__top">
+                            <div class="benefit__tile product__title" data-aos="zoom-in" data-aos-delay="100"
+                                 data-aos-duration="1100">
+                                <h2>POPULAR SERVICES</h2>
+                            </div>
+
+                        </div>
+                        <div class="product__slider prosuct_slider__aro">
+                            <div class="product__active owl-carousel">
+                                @foreach (var item in Model) {
+                                    if (item.Service == true)
+                                    {
+                                        <div class="item">
+                                            <div class="product__img service__bx" data-aos="fade-up" data-aos-delay="50"
+                                            data-aos-duration="1000">
+                                                <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" >
+                                                    <span><img src="@Url.Content(item.Image)" alt=""></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    }
+                                    }
+                                    
+                            </div>
+                        </div>
+@*                         <div class="view__btn">
+                            <a href="#" class="style--btn">View All Services</a>
+                        </div> *@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    <!--product-area--end-->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/Popper.js"></script>
+    <script src="~/assets/js/jquery.nice-select.js"></script>
+    <script src="~/assets/js/aos.js"></script>
+    <script src="~/assets/js/venobox.min.js"></script>
+    <script src="~/assets/js/jquery.sticky.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script>
+        $('.video__active').slick({
+            infinite: true,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: false,
+            slidesToScroll: 1
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+    </script>
+    <script>
+        new VenoBox({
+            selector: '.venobox'
+        });
+    </script>
+    <script>
+        $(".product__active").owlCarousel({
+            items: 4,
+            nav: true,
+            dot: false,
+            navText: ['<img src="../../assets/img/arrow-lft.svg" alt="">', '<img src="../../assets/img/arrow-right.svg" alt="">'],
+            loop: true,
+            margin: 20,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            smartSpeed: 1000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+
+                },
+                768: {
+                    items: 3,
+
+                },
+                1000: {
+                    items: 4,
+
+                }
+            }
+
+
+        });
+    </script>
+    <script src="~/assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

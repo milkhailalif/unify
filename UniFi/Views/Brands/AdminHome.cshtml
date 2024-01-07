@@ -1,0 +1,415 @@
+﻿@model IEnumerable<UniFi.Models.Product>
+
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/all.min.css" rel="stylesheet">
+    <link href="~/assets/css/fontawesome.css" rel="stylesheet">
+    <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/assets/css/venobox.min.css" rel="stylesheet">
+    <link href="~/assets/css/aos.css" rel="stylesheet">
+    <link href="~/assets/css/nice-select.css" rel="stylesheet">
+    <link href="~/assets/css/animate.css" rel="stylesheet">
+    <link href="~/assets/css/slick.css" rel="stylesheet">
+    <link href="~/assets/css/default.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <style>
+        .youtube-video {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+        }
+
+        .navC {
+            color: @ViewBag.TextColor;
+        }
+
+            .navC:hover {
+                color: @ViewBag.TextColor;
+            }
+    </style>
+
+    <br>
+    <div class="row w-75">
+        <div class="card p-4 text-center mx-4 border-5 border-info mb-10" style="width: 25rem; background-color: rgba(245, 245, 245, 0.8)">
+            <h5>Change Navigation Bar Color</h5>
+            <div class="col-8 mx-auto">
+                <input id="navbarColorPicker" type="color" value="@ViewBag.NavCol" class="w-100">
+            </div>
+            <br>
+            <button id="saveNavButton" onclick="saveContentNav()" class="border-3 border-info">Save</button>
+        </div>
+
+        <div class="card p-4 text-center mx-4 border-5 border-info mb-10" style="width: 25rem; background-color: rgba(245, 245, 245, 0.8)">
+            <h5>Slider Video</h5>
+            <p>Insert Youtube Video Embed URL. This will be the 1st Item on the Slider below</p>
+            <div class="col-8 mx-auto">
+                <input id="carouselVideo" type="text" value="@ViewBag.Vid" class="w-100">
+            </div>
+            <br>
+            <p>Example URL: https://www.youtube.com/embed/te2klTPtILs</p>
+            <br>
+            <button id="saveVidButton" onclick="saveContentVid()" class="border-3 border-info">Save</button>
+        </div>
+
+        <div class="card p-4 text-center mx-4 border-5 border-info mb-10" style="width: 25rem; background-color: rgba(245, 245, 245, 0.8)">
+            <h5>Upload Brand Images</h5>
+            <br>
+            <a id="saveVidButton" href="@Url.Action("UploadImages", "Brands")" class="btn border-3 border-info" style="background-color: lightcyan;">Start</a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: @ViewBag.NavCol; border-radius: 8px; margin: 30px;">
+        
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center"
+                 id="navbarCenteredExample">
+
+                <a class="navbar-brand p-0" href="#">
+                    <img src="@Url.Content(@ViewBag.Logo)" alt="" width="80" height="80">
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link navC" aria-current="page" href="@ViewBag.Web" target="_blank" rel="noopener noreferrer">Website</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link navC" href="@ViewBag.Twit" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link navC" href="@ViewBag.Disc" target="_blank" rel="noopener noreferrer">Discord</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link navC" href="@Url.Action("GenerateLink", "Home")">Generate Link</a>
+                    </li>
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+    <!--video--area--start-->
+    <div class="video__Area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video__wrap">
+                        <div class="video__active">
+                            <div class="video__single" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                <div class="video__link">
+                                    <iframe class="youtube-video" style="border-radius: 16px;" frameborder="0" allow="autoplay;" src="@ViewBag.Vid" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="video__single" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                <div class="video__link">
+                                    <span class="video-img"><img src="@Url.Content(@ViewBag.IMG)" alt=""></span>
+
+                                </div>
+                            </div>
+                            <div class="video__single" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                <div class="video__link">
+                                    <span class="video-img"><img src="@Url.Content(@ViewBag.IMG1)" alt=""></span>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--video--area--end-->
+
+    <div class="card p-4 text-center mx-4 border-5 border-info" style="width: 25rem; background-color: rgba(245, 245, 245, 0.8)">
+
+        <h5>Customize Card</h5>
+
+        <div class="form-group text-start">
+            <input id="cardColorPicker" type="color" value="@ViewBag.CardColor">
+            <label for="cardColorPicker">Card Color</label>
+        </div>
+
+        <div class="form-group text-start">
+            <input id="accentColorPicker" type="color" value="@Html.Raw(@ViewBag.Accent)">
+            <label for="accentColorPicker">Accent Color</label>
+        </div>
+
+        <div class="form-group text-start">
+            <input id="textColorPicker" type="color" value="@ViewBag.TextColor">
+            <label for="textColorPicker">Text Color</label>
+        </div>
+        <br>
+        <button id="saveCardButton" onclick="saveContentCard()" class="border-3 border-info">Save</button>
+
+    </div>
+    <!--seller--aera--start-->
+    <div class="seller__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="seller__wrap" style="background-color: @ViewBag.CardColor; color: @ViewBag.TextColor">
+                        <h3 id="brandName" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100" style="color: @ViewBag.TextColor">@ViewBag.BrandName</h3>
+                        <div class="seller__fx">
+                            @* <div class="seller__profile__box" data-aos="fade-up" data-aos-delay="150"
+                                 data-aos-duration="1100" style="background: @Html.Raw(@ViewBag.Primary);">
+                                <div class="user__icon" data-aos="zoom-in" data-aos-delay="400"
+                                     data-aos-duration="1400">
+                                    <span><img src="@Url.Content(@ViewBag.Logo)" alt=""></span>
+                                </div>
+                                <h4>Seller Level</h4>
+                                <a href="#">Marketer Level</a>
+                            </div> *@
+                            <div class="seller_about__box" data-aos="fade-down" data-aos-delay="200"
+                                 data-aos-duration="1200" style="background: @Html.Raw(@ViewBag.Accent);">
+                                <h4 id="displayText" style="color: @ViewBag.TextColor">About Us</h4>
+                                <p id="editableParagraph" style="color: @ViewBag.TextColor" contentEditable="true">
+                                    @ViewBag.DisText
+                                </p>
+                                <br>
+                                <button onclick="enableEditing()" class="border-3 border-info">Edit Text</button>
+                                <button id="saveButton" onclick="saveContent()" style="display: none;" class="border-3 border-info">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--seller--aera--end-->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/Popper.js"></script>
+    <script src="~/assets/js/jquery.nice-select.js"></script>
+    <script src="~/assets/js/aos.js"></script>
+    <script src="~/assets/js/venobox.min.js"></script>
+    <script src="~/assets/js/jquery.sticky.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script>
+
+        function convertToHex(colorValue) {
+            // Regular expression to check if the color is in hex format
+            var hexColorRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+
+            // Test the color value against the regular expression
+            if (hexColorRegex.test(colorValue)) {
+                // Already in hex format
+                return colorValue;
+            } else {
+                // Convert to hex format
+                var rgbArray = colorValue.match(/\d+/g);
+                if (rgbArray && rgbArray.length === 3) {
+                    // Convert RGB to hex
+                    var hexColor = rgbArray.reduce(function (acc, val) {
+                        var hex = parseInt(val).toString(16);
+                        return acc + (hex.length === 1 ? '0' + hex : hex);
+                    }, '#');
+
+                    return hexColor;
+                } else {
+                    // Invalid color format
+                    console.error('Invalid color format:', colorValue);
+                    return null;
+                }
+            }
+        }
+
+        function enableEditing() {
+            var editableParagraph = document.getElementById('editableParagraph');
+            var saveButton = document.getElementById('saveButton');
+
+            // Enable editing
+            editableParagraph.contentEditable = true;
+
+            // Set focus to the paragraph
+            editableParagraph.focus();
+
+            // Show the save button and hide the edit button
+            saveButton.style.display = 'inline';
+        }
+
+        function saveContent() {
+            var saveButton = document.getElementById('saveButton');
+
+            var editedContent = document.getElementById('editableParagraph').innerText;
+            window.location.href = '/Brands/SaveText/' + encodeURIComponent(editedContent);
+
+            // Hide the save button and show the edit button
+            saveButton.style.display = 'none';
+        }
+
+        function saveContentVid() {
+
+            var content = document.getElementById('carouselVideo').value;
+            window.location.href = '/Brands/SaveVid/' + encodeURIComponent(content);
+        }
+
+        function saveContentNav() {
+
+            var colorInput = document.getElementById('navbarColorPicker');
+
+            // Get the value of the color input
+            var colorValue = colorInput.value;
+
+            // Regular expression to check if the color is in hex format
+            var hexColorRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+
+            // Test the color value against the regular expression
+            if (hexColorRegex.test(colorValue)) {
+                window.location.href = '/Brands/SaveNav/' + encodeURIComponent(colorValue);
+            } else {
+                var hexColor = convertToHex(colorValue);
+                window.location.href = '/Brands/SaveNav/' + encodeURIComponent(hexColor);
+            }
+        }
+
+        function saveContentCard() {
+
+            var colorInput = document.getElementById('cardColorPicker');
+            var colorInput1 = document.getElementById('accentColorPicker');
+            var colorInput2 = document.getElementById('textColorPicker');
+
+            // Get the value of the color input
+            var colorValue = colorInput.value;
+            var colorValue1 = colorInput1.value;
+            var colorValue2 = colorInput2.value;
+
+            // Regular expression to check if the color is in hex format
+            var hexColorRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+
+            // Test the color value against the regular expression
+            if (!hexColorRegex.test(colorValue)) {
+                var colorValue = convertToHex(colorValue);
+            }
+            if (!hexColorRegex.test(colorValue1)) {
+                var colorValue1 = convertToHex(colorValue1);
+            }
+            if (!hexColorRegex.test(colorValue2)) {
+                var colorValue2 = convertToHex(colorValue2);
+            }
+
+            window.location.href = '/Brands/SaveCard/?cColor=' + encodeURIComponent(colorValue) + '&aColor=' + encodeURIComponent(colorValue1) + '&tColor=' + encodeURIComponent(colorValue2);
+        }
+    </script>
+    <script>
+        $('.video__active').slick({
+            infinite: true,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            dots: true,
+            arrows: false,
+            slidesToScroll: 1
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+    </script>
+    <script>
+        new VenoBox({
+            selector: '.venobox'
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the color input element
+            var colorInput = document.getElementById('navbarColorPicker');
+
+            // Event listener for color change
+            colorInput.addEventListener('input', function (event) {
+                var newColor = event.target.value;
+                // Change the background color of the navbar
+                document.querySelector('.navbar').style.backgroundColor = newColor;
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the color input element
+            var colorInput = document.getElementById('cardColorPicker');
+
+            // Event listener for color change
+            colorInput.addEventListener('input', function (event) {
+                var newColor = event.target.value;
+                // Change the background color of the navbar
+                document.querySelector('.seller__wrap').style.backgroundColor = newColor;
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the color input element
+            var colorInput = document.getElementById('accentColorPicker');
+
+            // Event listener for color change
+            colorInput.addEventListener('input', function (event) {
+                var newColor = event.target.value;
+                // Change the background color of the navbar
+                document.querySelector('.seller_about__box').style.backgroundColor = newColor;
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the color input element
+            var colorInput = document.getElementById('textColorPicker');
+
+            // Event listener for color change
+            colorInput.addEventListener('input', function (event) {
+                var newColor = event.target.value;
+                // Change the background color of the navbar
+                document.getElementById('brandName').style.color = newColor;
+                document.getElementById('displayText').style.color = newColor;
+                document.getElementById('editableParagraph').style.color = newColor;
+            });
+        });
+    </script>
+
+    <script src="~/assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

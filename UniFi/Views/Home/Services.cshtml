@@ -1,0 +1,220 @@
+﻿@model IEnumerable<UniFi.Models.Product>
+
+@{
+    ViewData["Title"] = "Services";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+	var count2 = 0;
+}
+
+<style>
+    .textc {
+        color: whitesmoke;
+    }
+
+	@@media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+
+			.carousel-inner .carousel-item > div:first-child {
+				display: block;
+			}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@@media (min-width: 768px) {
+
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-end.active,
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-next {
+			transform: translateX(33%);
+		}
+
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-start.active,
+		#recipeCarousel2.carousel .carousel-inner .carousel-item-prev {
+			transform: translateX(-33%);
+		}
+	}
+
+	#recipeCarousel2.carousel .carousel-inner .carousel-item-end,
+	#recipeCarousel2.carousel .carousel-inner .carousel-item-start {
+		transform: translateX(0);
+	}
+
+
+
+
+
+	.card.text-center.mx-2 {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.card-body {
+		flex: unset;
+	} 
+
+	.card.text-center.mx-2 a {
+		order: 2;
+	}
+	 
+	.card-title.textc {
+		font-size: 26px;
+	}
+
+	.float-end img {
+		width: 40px !important;
+	}
+
+	.wrappers .card.text-center img {
+		width: 153px !important;
+	}
+
+	.wrappers .card.text-center .card-body .card-title.textc {
+		font-size: 20px !important;
+	}
+
+	.wrappers .card.text-center {
+		padding: 7px !important;
+	}
+
+	.wrappers {
+		max-width: 1310px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+
+
+
+
+
+</style>
+
+<div class="container text-center my-3">
+	<div class="row mx-auto my-auto justify-content-center">
+		<div id="recipeCarousel2" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+
+			<div class="clearfix">
+				<div class="float-start">
+					<h3 class="textc">Featured Services</h3>
+				</div>
+
+				<div class="float-end">
+
+
+					<a class="bg-transparent float-start" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+						<img src="~/images/bi_arrow-down-right-circle.svg" class="d-block w-100" alt="..."></img>
+						@*<i class="fa fa-arrow-left fa-2x p-2" aria-hidden="true" style="color: black;"></i>*@
+					</a>
+					<a class="bg-transparent float-end" href="#recipeCarousel2" role="button" data-bs-slide="next">
+						<img src="~/images/bi_arrow-down-left-circle.svg" class="d-block w-100" alt="..."></img>
+						@*<i class="fa fa-arrow-right fa-2x p-2" aria-hidden="true" style="color: black;"></i>*@
+					</a>
+
+				</div>
+			</div>
+
+			<div class="carousel-inner" role="listbox">
+				@foreach (var item in Model)
+				{
+					if (item.Service == true)
+					{
+						if (count2 <= 0)
+						{
+							count2++;
+
+							<div class="carousel-item active">
+								<div class="col">
+									<div class="card text-center mx-2" style="background-color: #0C072A; border-radius: 16px;">
+										<a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })">
+											<img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+										</a>
+										<div class="card-body">
+											<h5 class="card-title textc">@Html.DisplayFor(modelItem => item.Name)</h5>
+											<h5 class="card-title textc">$@Html.DisplayFor(modelItem => item.Price)</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						}
+						else
+						{
+							<div class="carousel-item">
+								<div class="col">
+									<div class="card text-center mx-2" style="background-color: #0C072A; border-radius: 16px;">
+										<a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })">
+											<img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+										</a>
+										<div class="card-body">
+											<h5 class="card-title textc">@Html.DisplayFor(modelItem => item.Name)</h5>
+											<h5 class="card-title textc">$@Html.DisplayFor(modelItem => item.Price)</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						}
+					}
+
+				}
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<h1 class="text-center textc">Services</h1>
+<br>
+<br>
+
+<div class="wrappers">
+	<div class="row row-cols-1 row-cols-md-4 g-4" style="margin: 10px;">
+		@foreach (var item in Model)
+		{
+			if (item.Service == true)
+			{
+				<div class="col" style="color: white">
+					<div class="card text-center" style="background-color: #0C072A; border-radius: 16px;">
+						<a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })"><img src="@Url.Content(item.Image)" class="card-img-top" alt="..."></a>
+						<div class="card-body">
+							<h5 class="card-title textc">@Html.DisplayFor(modelItem => item.Name)</h5>
+							<h5 class="card-title textc">$ @Html.DisplayFor(modelItem => item.Price)</h5>
+							@* <a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: #EB4823; background-color: #FCD9BB; color: #EB4823;">Add to cart</a>
+					<a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px;">View Service</a> *@
+						</div>
+					</div>
+				</div>
+			}
+		}
+	</div>
+
+</div>
+
+<script>
+
+	let container2 = document.querySelector("#recipeCarousel2");
+	let items2 = container2.querySelectorAll('.carousel .carousel-item')
+
+	items2.forEach((el2) => {
+		const minPerSlide2 = 1
+		let next2 = el2.nextElementSibling
+		for (var i = 1; i < minPerSlide2; i++) {
+			if (!next2) {
+				// wrap carousel by using first child
+				next2 = items2[0]
+			}
+			let cloneChild2 = next2.cloneNode(true)
+			el2.appendChild(cloneChild2.children[0])
+			next2 = next2.nextElementSibling
+		}
+	});
+</script>

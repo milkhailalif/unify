@@ -1,0 +1,311 @@
+﻿@model UniFi.Models.Profile
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/all.min.css" rel="stylesheet">
+    <link href="~/assets/css/fontawesome.css" rel="stylesheet">
+    <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/assets/css/venobox.min.css" rel="stylesheet">
+    <link href="~/assets/css/aos.css" rel="stylesheet">
+    <link href="~/assets/css/animate.css" rel="stylesheet">
+    <link href="~/assets/css/nice-select.css" rel="stylesheet">
+    <link href="~/assets/css/slick.css" rel="stylesheet">
+    <link href="~/assets/css/default.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(1, 69, 148, 1); margin: 10px; border-radius: 8px;">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center"
+                 id="navbarCenteredExample">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("BrandDashboard", "Profiles")">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "BrandProducts")">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Edit", "Brands")">Settings</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Details</a>
+                    </li>
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+    <!--    contact-area-start-->
+    <div class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-box">
+                        <form asp-action="Edit" class="m-5 textc">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="contact-slider owl-carousel">
+
+
+                                <div class="single-contact">
+
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <input type="hidden" asp-for="Id" />
+                                    <div class="contact-input" style="display: none">
+                                        <label asp-for="UserId" class="control-label"></label>
+                                        <input asp-for="UserId" class="form-control" />
+                                        <span asp-validation-for="UserId" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input" style="display: none">
+                                        <label asp-for="EmailAdd" class="control-label"></label>
+                                        <input asp-for="EmailAdd" class="form-control" />
+                                        <span asp-validation-for="EmailAdd" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="FullName" class="control-label"></label>
+                                        <input asp-for="FullName" class="form-control" />
+                                        <span asp-validation-for="FullName" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Wallet" class="control-label"></label>
+                                        <input asp-for="Wallet" class="form-control" readonly="readonly" style="color: black;" />
+                                        <span asp-validation-for="Wallet" class="text-danger"></span>
+                                        <br>
+
+                                        <a href="@Url.Action("ConnectBrandWallet", "Profiles")" class="btn btn-primary p-2" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;">Change Wallet</a>
+
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Country" class="control-label"></label>
+                                        <input asp-for="Country" class="form-control" />
+                                        <span asp-validation-for="Country" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="City" class="control-label"></label>
+                                        <input asp-for="City" class="form-control" />
+                                        <span asp-validation-for="City" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                                <div class="single-contact">
+
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    
+                                    <div class="brand-setting-boxes d-flex">
+                                        <i class="fa-solid fa-globe"></i>
+                                        <div class="contact-input" style="width: 100%;">
+                                            <label asp-for="Website" class="control-label"></label>
+                                            <input asp-for="Website" class="form-control" />
+                                            <span asp-validation-for="Website" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="brand-setting-boxes d-flex">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                        <div class="contact-input" style="width: 100%;">
+                                            <label asp-for="Twitter" class="control-label"></label>
+                                            <input asp-for="Twitter" class="form-control" />
+                                            <span asp-validation-for="Twitter" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="brand-setting-boxes d-flex">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <div class="contact-input" style="width: 100%;">
+                                            <label asp-for="Facebook" class="control-label"></label>
+                                            <input asp-for="Facebook" class="form-control" />
+                                            <span asp-validation-for="Facebook" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="brand-setting-boxes d-flex">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <div class="contact-input" style="width: 100%;">
+                                            <label asp-for="Instagram" class="control-label"></label>
+                                            <input asp-for="Instagram" class="form-control" />
+                                            <span asp-validation-for="Instagram" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="brand-setting-boxes d-flex">
+                                        <i class="fa-brands fa-discord"></i>
+                                        <div class="contact-input" style="width: 100%;">
+                                            <label asp-for="DiscordInvite" class="control-label"></label>
+                                            <input asp-for="DiscordInvite" class="form-control" />
+                                            <span asp-validation-for="DiscordInvite" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="single-contact">
+
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="CompanyDetails" class="control-label"></label>
+                                        <input asp-for="CompanyDetails" class="form-control" />
+                                        <span asp-validation-for="CompanyDetails" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="Logo" class="control-label"></label>
+                                        <input asp-for="Logo" class="form-control" />
+                                        <span asp-validation-for="Logo" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                                <div class="single-contact">
+
+                                    <div class="contact-logo">
+                                        <a href="#"><img src="~/assets/img/product/contact-logo.png" alt=""></a>
+                                    </div>
+                                    <div class="contact-input">
+                                        <br>
+                                        <label asp-for="TwitterUsername" class="control-label"></label>
+                                        <input asp-for="TwitterUsername" class="form-control" />
+                                        <span asp-validation-for="TwitterUsername" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="DiscordUsername" class="control-label"></label>
+                                        <input asp-for="DiscordUsername" class="form-control" />
+                                        <span asp-validation-for="DiscordUsername" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="CompanyName" class="control-label"></label>
+                                        <input asp-for="CompanyName" class="form-control" />
+                                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                                    </div>
+                                    <div class="contact-input">
+                                        <label asp-for="CompanyAge" class="control-label"></label>
+                                        <input asp-for="CompanyAge" class="form-control" />
+                                        <span asp-validation-for="CompanyAge" class="text-danger"></span>
+                                    </div>
+
+                                    <input type="submit" value="Save" class="saveBTN" />
+
+                                </div>
+                   
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    contact-area-end-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/Popper.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/venobox.min.js"></script>
+    <script src="~/assets/js/aos.js"></script>
+    <script src="~/assets/js/jquery.sticky.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/jquery.nice-select.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script>
+        $(".contact-slider").owlCarousel({
+            items: 1,
+            nav: true,
+            dot: true,
+            navText: ['Previous', 'Next'],
+            loop: false,
+            stagePadding: 0,
+            margin: 10,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            smartSpeed: 1000,
+            autoHeight: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                768: {
+                    items: 1,
+
+                },
+                1000: {
+                    items: 1,
+
+                }
+            },
+            URLhashListener: true,
+            autoplayHoverPause: true,
+            startPosition: "URLHash",
+            onTranslate: function (e) {
+                $(".owl-item").removeClass("highlighted");
+            },
+            onTranslated: function (e) {
+                $(".owl-item").eq(e.item.index).addClass("highlighted");
+            },
+
+
+        });
+
+        $('.owl-carousel').on('changed.owl.carousel', function (e) {
+
+            $('button.owl-next').removeAttr('disabled');
+            $('button.owl-prev').removeAttr('disabled');
+
+
+
+            if ((e.page.index + 1) >= e.page.count) {
+                $('button.owl-next').attr('disabled', 'disabled');
+                $('button.owl-prev').addClass('disabled');
+            } else {
+                $('button.owl-next').removeAttr('disabled');
+            }
+
+            if (e.page.index == 0) {
+                $('button.owl-prev').attr('disabled', 'disabled');
+            } else {
+                $('button.owl-prev').removeAttr('disabled');
+            }
+
+
+        });
+
+    </script>
+    <script src="~/assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniFi", "UniFi\UniFi.csproj", "{24548945-6CD1-46B8-95FD-C7C1329D352F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24548945-6CD1-46B8-95FD-C7C1329D352F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24548945-6CD1-46B8-95FD-C7C1329D352F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24548945-6CD1-46B8-95FD-C7C1329D352F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24548945-6CD1-46B8-95FD-C7C1329D352F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCBE8583-8D41-4FFB-BFAE-36B88C201544}
+	EndGlobalSection
+EndGlobal

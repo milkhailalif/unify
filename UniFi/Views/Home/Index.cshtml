@@ -1,0 +1,498 @@
+﻿@model Tuple<List<Product>, List<Brand>>
+
+@{
+    ViewData["Title"] = "Home";
+    var services = Model.Item1.Where(m => m.Service == true).ToList();
+    var products = Model.Item1.Where(m => m.Service == false).ToList();
+}
+
+<style>
+    .fullimg{
+        position: relative;
+        width: 100%;
+    }
+
+    .cbtn{
+        width: 173px;
+        height: 56px;
+        position: absolute;
+        bottom: 80px;
+        left: 50px;
+    }
+
+    @@media only screen and (max-width: 600px) { 
+        .cbtn {
+            width: 123px;
+            height: 36px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+
+
+
+    .product__slider img {
+        borderr-a:;
+        border-radius: 10px;
+    }
+
+    .product__img a img {
+        width: 220px !important;
+    }
+
+
+
+
+    .hero__area {
+	background-size: cover;
+} 
+
+</style>
+
+<!--hero--area--start-->
+<div class="hero__area" style="background-image: url(assets/img/hero--bg.png)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero__wrap">
+                    @* <div class="hero__search" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
+                        <input type="text" placeholder="Search Uni-Fy">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div> *@
+                    <div class="hero__inner" style="zoom: 80%;">
+                        <div class="hero__active">
+                            <div class="hero__single__bxo">
+                                <div class="hero__fx">
+
+                                    <img src="~/images/1.png" alt="">
+                                    @* <div class="conta__btn">
+                                        <a href="#!" class="sign__bt cbtn">Contact Us</a>
+                                    </div> *@
+                                    <!-- <div class="hero__content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <h2>UNI-FY</h2>
+                                        <h1>Cyber Frogs</h1>
+                                        <p>C h e c k o u t t h e n e w l i n e o f F r o g <br>
+                                            s w a t c h e s</p>
+                                        <div class="conta__btn">
+                                            <a href="#!" class="style--btn">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="hero__img" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                                        <img src="assets/img/hero--img.png" alt="">
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="hero__single__bxo">
+                                <div class="hero__fx">
+
+                                    <img src="~/images/4.png" alt="">
+                                    @* <div class="conta__btn">
+                                        <a href="#!" class="sign__bt cbtn">Contact Us</a>
+                                    </div> *@
+                                    <!-- <div class="hero__content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <h2>UNI-FY</h2>
+                                        <h1>Cyber Frogs</h1>
+                                        <p>C h e c k o u t t h e n e w l i n e o f F r o g <br>
+                                            s w a t c h e s</p>
+                                        <div class="conta__btn">
+                                            <a href="#!" class="style--btn">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="hero__img" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                                        <img src="assets/img/hero--img.png" alt="">
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="hero__single__bxo">
+                                <div class="hero__fx">
+
+                                    <img src="~/images/5.png" alt="">
+                                    @* <div class="conta__btn">
+                                        <a href="#!" class="sign__bt cbtn">Contact Us</a>
+                                    </div> *@
+                                    <!-- <div class="hero__content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <h2>UNI-FY</h2>
+                                        <h1>Cyber Frogs</h1>
+                                        <p>C h e c k o u t t h e n e w l i n e o f F r o g <br>
+                                            s w a t c h e s</p>
+                                        <div class="conta__btn">
+                                            <a href="#!" class="style--btn">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="hero__img" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                                        <img src="assets/img/hero--img.png" alt="">
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="hero__single__bxo">
+                                <div class="hero__fx">
+
+                                    <img src="~/images/9.png" alt="">
+                                    @* <div class="conta__btn">
+                                    <a href="#!" class="sign__bt cbtn">Contact Us</a>
+                                    </div> *@
+                                    <!-- <div class="hero__content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <h2>UNI-FY</h2>
+                                        <h1>Cyber Frogs</h1>
+                                        <p>C h e c k o u t t h e n e w l i n e o f F r o g <br>
+                                            s w a t c h e s</p>
+                                        <div class="conta__btn">
+                                            <a href="#!" class="style--btn">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="hero__img" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                                        <img src="assets/img/hero--img.png" alt="">
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="hero__single__bxo">
+                                <div class="hero__fx">
+
+                                    <img src="~/images/6.png" alt="">
+                                    @* <div class="conta__btn">
+                                        <a href="#!" class="sign__bt cbtn">Contact Us</a>
+                                    </div> *@
+                                    <!-- <div class="hero__content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <h2>UNI-FY</h2>
+                                        <h1>Cyber Frogs</h1>
+                                        <p>C h e c k o u t t h e n e w l i n e o f F r o g <br>
+                                            s w a t c h e s</p>
+                                        <div class="conta__btn">
+                                            <a href="#!" class="style--btn">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="hero__img" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                                        <img src="assets/img/hero--img.png" alt="">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--hero--area--end-->
+
+<!--product-area--start-->
+<div class="product__area popular-thr">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="product__wrap">
+                    <div class="product__top">
+                        <div class="benefit__tile product__title">
+                            <h2><a asp-area="" asp-controller="Home" asp-action="Brands" class="clickBtn">WEB 3 BRAND PAGES</a></h2>
+                        </div>
+                        @*                         <div class="procuct__select">
+                        <select>
+                        <option data-display="7D">7D</option>
+                        <option value="1">7D</option>
+                        <option value="2">8D</option>
+                        <option value="3">9D</option>
+                        <option value="4">7D</option>
+                        </select>
+                        </div> *@
+                    </div>
+                    <div class="product__slider">
+                        <div class="product__active pdc-sec owl-carousel">
+                            @for (var i = 0; i < Model.Item2.Count; i ++)
+                            {
+
+                                <div class="item">
+                                    <div class="product__img" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <a href="@Url.Action("Home", "Brands", new { id = Model.Item2[i].DisplayName })"><img src="@Url.Content(Model.Item2[i].BrandImage)" alt="" style="max-width: 90%;"></a>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--product-area--end-->
+
+
+<!--product-area--start-->
+<div class="product__area popular-sec">
+    <div class="popular-overlay"><img src="~/assets/img/popular-overlay.png" alt=""></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="product__wrap">
+                    <div class="product__top">
+                        <div class="benefit__tile product__title">
+                            <h2><a asp-area="" asp-controller="Home" asp-action="Products" class="clickBtn">POPULAR PRODUCTS</a></h2>
+                        </div>
+                        
+                    </div>
+                    <div class="product__slider">
+                        <div class="product__active pdc-sec owl-carousel">
+                            @for (var i = 0; i < products.Count; i += 2)
+                            {
+                                var nexti = i + 1;
+
+                                if (nexti >= products.Count)
+                                {
+                                    nexti = i;
+                                }
+
+                                <div class="item">
+                                    <div class="product__img" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <a href="@Url.Action("ProductDetails", "Brands", new { id = products[i].Id })"><img src="@Url.Content(products[i].Image)" alt=""></a>
+                                    </div>
+                                    <div class="product__img it2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1100">
+                                        <a href="@Url.Action("ProductDetails", "Brands", new { id = products[nexti].Id })"><img src="@Url.Content(products[nexti].Image)" alt=""></a>
+                                    </div>
+                                </div>
+                            }
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--product-area--end-->
+<!--product-area--start-->
+<div class="product__area popular-sec">
+    <div class="popular-overlay"><img src="~/assets/img/popular-overlay.png" alt=""></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="product__wrap">
+                    <div class="product__top">
+                        <div class="benefit__tile product__title">
+                            <h2><a asp-area="" asp-controller="Home" asp-action="Services" class="clickBtn">POPULAR SERVICES</a></h2>
+                        </div>
+
+                    </div>
+                    <div class="product__slider">
+                        <div class="product__active pdc-sec owl-carousel">
+                            @for (var i = 0; i < services.Count; i += 2)
+                            {
+                                var nexti = i + 1;
+
+                                if (nexti >= services.Count)
+                                {
+                                    nexti = i;
+                                }
+
+                                <div class="item">
+                                    <div class="product__img" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                        <a href="@Url.Action("ProductDetails", "Brands", new { id = services[i].Id })"><img src="@Url.Content(services[i].Image)" alt=""></a>
+                                    </div>
+                                    <div class="product__img it2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1100">
+                                        <a href="@Url.Action("ProductDetails", "Brands", new { id = services[nexti].Id })"><img src="@Url.Content(services[nexti].Image)" alt=""></a>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--product-area--end-->
+@* <!--feedback--aera--start-->
+<div class="feedback__area" style="background-image: url(~/assets/img/feedback/feedback-bg.png)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="feedback__wrap">
+                    <div class="feedback__title">
+                        <span>FEEDBACK</span>
+                        <h1>Community Feedback</h1>
+                    </div>
+                    <div class="feedback__fx">
+                        <div class="feedback__lf">
+                            <div class="feedback__box" style="background-image: url(~/assets/img/feedback/fbg.png)" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                                <div class="feedback_active">
+                                    <div class="feedback__single">
+                                        <img src="~/assets/img/feedback/w1.png" alt="">
+                                    </div>
+                                    <div class="feedback__single">
+                                        <img src="~/assets/img/feedback/w1.png" alt="">
+                                    </div>
+                                    <div class="feedback__single">
+                                        <img src="~/assets/img/feedback/w1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__ri">
+                            <div class="feedback__ri__top">
+                                <div class="feedback__review__single__box" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                                    <div class="feedback__review__ct">
+                                        <img src="~/assets/img/feedback/p1.svg" alt="">
+                                        <h4>Julia Alison Jordon</h4>
+                                        <div class="feedback__star">
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text
+                                            the printing and typesetting industry.
+                                            Loremis simply dummy text of
+                                            printing andsetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feedback__review__single__box review__bg-sec" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1100">
+                                    <div class="feedback__review__ct">
+                                        <img src="~/assets/img/feedback/p1.svg" alt="">
+                                        <h4>Alize David</h4>
+                                        <div class="feedback__star">
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text
+                                            the printing and typesetting industry.
+                                            Loremis simply dummy text of
+                                            printing andsetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback__btm">
+                                <div class="feedback__btm__review__box" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                                    <div class="feedback__review__ct">
+                                        <img src="~/assets/img/feedback/p1.svg" alt="">
+                                        <h4>Steve Smith</h4>
+                                        <div class="feedback__star">
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting industry.
+                                            Loremis simply dummy text ofprinting andsetting industry.dummy text
+                                            ofprinting andsetting industry. Loremis simply dummy text ofprinting
+                                            andsetting industry.dummy text ofprinting
+                                            andsetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__mobile">
+                            <div class="feedback__mobile__active owl-carousel">
+                                <div class="feedback__review__single__box">
+                                    <div class="feedback__review__ct">
+                                        <img src="~/assets/img/feedback/p1.svg" alt="">
+                                        <h4>Julia Alison Jordon</h4>
+                                        <div class="feedback__star">
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text
+                                            the printing and typesetting industry.
+                                            Loremis simply dummy text of
+                                            printing andsetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feedback__review__single__box review__bg-sec">
+                                    <div class="feedback__review__ct">
+                                        <img src="~/assets/img/feedback/p1.svg" alt="">
+                                        <h4>Alize David</h4>
+                                        <div class="feedback__star">
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text
+                                            the printing and typesetting industry.
+                                            Loremis simply dummy text of
+                                            printing andsetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feedback__btm__review__box">
+                                    <div class="feedback__review__ct">
+                                        <img src="~/assets/img/feedback/p1.svg" alt="">
+                                        <h4>Steve Smith</h4>
+                                        <div class="feedback__star">
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                            <span><img src="~/assets/img/star.svg" alt=""></span>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text
+                                            the printing and typesetting industry.
+                                            Loremis simply dummy text of
+                                            printing andsetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`
+<!--feedback--aera--end--> *@
+<!--join--aera--start-->
+<div class="join__area">
+@*  <div class="join-sp1" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100"><img src="~/assets/img/j1.png" alt=""></div>
+    <div class="join-sp2" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200"><img src="~/assets/img/j2.png" alt=""></div>
+    <div class="join-sp3" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1300"><img src="~/assets/img/j3.png" alt=""></div>
+    <div class="join-sp4" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1400"><img src="~/assets/img/j4.png" alt=""></div> *@
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="join__content" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1600">
+                    @* <h6>PRICING</h6> *@
+                    <h2>FREE To Join For a Limited Time</h2>
+                    <a asp-area="Identity" asp-page="/Account/Register">Sign Up Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--join--aera--end-->
+
+<script>
+    $('.video__active').slick({
+        infinite: true,
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+        slidesToScroll: 1
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+        $('select').niceSelect();
+    });
+
+</script>

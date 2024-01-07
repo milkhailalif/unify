@@ -1,0 +1,184 @@
+﻿@model UniFi.Models.Product
+
+@{
+    ViewData["Title"] = "ProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = null;
+}
+
+<style>
+
+
+
+</style>
+
+<!--watch--area--start-->
+<div class="watch__area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="watch__wrap">
+                    <div class="watch__fx">
+                        <div class="watch__lf">
+                            <div class="watch__slider">
+                                <div class="watch__slider__top_box">
+                                    @* <div class="watch__play">
+                                        <a href="https://www.youtube.com/watch?v=KyUw9GuNPDg" class="venobox" data-vbtype="video"><img src="~/assets/img/play-icon.svg" alt=""></a>
+                                    </div> *@
+                                    <div class="watch__big">
+                                        <div class="show__watch__single">
+                                            <img src="@Url.Content(Model.Image)" alt="">
+                                        </div>
+                                        <div class="show__watch__single">
+                                            <img src="@Url.Content(Model.AltImage1)" alt="">
+                                        </div>
+                                        <div class="show__watch__single">
+                                            <img src="@Url.Content(Model.AltImage2)" alt="">
+                                        </div>
+                                        <div class="show__watch__single">
+                                            <img src="@Url.Content(Model.AltImage3)" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="watch__small">
+                                    <div class="single__small">
+                                        <img src="@Url.Content(Model.Image)" alt="">
+                                    </div>
+                                    <div class="single__small">
+                                        <img src="@Url.Content(Model.AltImage1)" alt="">
+                                    </div>
+                                    <div class="single__small">
+                                        <img src="@Url.Content(Model.AltImage2)" alt="">
+                                    </div>
+                                    <div class="single__small">
+                                        <img src="@Url.Content(Model.AltImage3)" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wwatch__ri">
+                            <div class="watch__ri__top__content" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1100">
+                                <h6>@Model.Brand</h6>
+                                <h2>@Model.Name</h2>
+                                <p>
+                                    @Model.Description
+                                </p>
+                                
+                            <div class="price__wp" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1300">
+                                <div class="price__tx">
+                                        <p>PRICE: $@Model.Price</p>
+                                </div>
+                                @* <div class="price__count">
+                                    <div class="frame">
+                                        <div class="center">
+                                            <div class="button">
+                                                <button id="minus-btn"><i class="fal fa-minus"></i></button>
+                                            </div>
+                                            <div class="number">
+                                                <h1 id="count">0</h1>
+                                            </div>
+                                            <div class="button">
+                                                <button id="plus-btn"><i class="fal fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> *@
+                                    
+                            </div>
+                                <div class="row mb-2">
+                                <a href="@Url.Action("Buy", "Cart", new { id = Model.Id })" class="log__bt">Add to cart</a>
+                                <a href="@Url.Action("GenerateLink", "Home")" class="sign__bt">Generate Link</a>
+                                </div>
+                            <div class="feature__wrap" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1600">
+                                <div class="feature__title">
+                                    <h3>Key Features</h3>
+                                </div>
+                                <div class="feature__btn">
+                                    <a href="#">@Model.Feature1</a>
+                                    <a href="#">@Model.Feature2</a>
+                                    <a href="#">@Model.Feature3</a>
+                                    <a href="#">@Model.Feature4</a>
+                                    <a href="#">@Model.Feature5</a>
+                                    <a href="#">@Model.Feature6</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--watch--area--end-->
+<br>
+<br>
+<br>
+
+
+<script>
+    let minusBtn = document.getElementById("minus-btn");
+    let count = document.getElementById("count");
+    let plusBtn = document.getElementById("plus-btn");
+
+    let countNum = 0;
+    count.innerHTML = countNum;
+
+    minusBtn.addEventListener("click", () => {
+        countNum -= 1;
+        count.innerHTML = countNum;
+    });
+
+    plusBtn.addEventListener("click", () => {
+        countNum += 1;
+        count.innerHTML = countNum;
+    });
+
+</script>
+    <script>
+        new VenoBox({
+            selector: '.venobox'
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+@*<h1 class="text-center">@Model.Brand</h1>
+
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+            <div class="card" style="background-color: #0C072A; border-radius: 16px">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="images p-3">
+                            <div class="text-center p-4"> <img id="main-image" src="@Model.Image" width="250" /> </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product p-4">
+                            <div class="mt-4 mb-3"> <span class="text-uppercase brand" style="color: #FF840E;">@Model.Brand</span>
+                                <h5 class="text-uppercase">@Model.Name</h5>
+                                <div class="price d-flex flex-row align-items-center"> <span class="act-price" style="color: #FF840E;">$@Model.Price</span>
+                                    
+                                </div>
+                            </div>
+                            <p class="about">@Model.Description</p>
+
+                            <div class="cart mt-4 align-items-center"> 
+                                <a href="@Url.Action("Buy", "Cart", new { id = Model.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: #EB4823; background-color: #FCD9BB; color: #EB4823;">Add to cart</a>
+                                <a href="@Url.Action("GenerateLink", "Home")" class="btn btn-primary" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px;">Generate Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@

@@ -1,0 +1,160 @@
+﻿@model UniFi.Models.Profile
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .textc {
+        color: whitesmoke;
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(1, 69, 148, 1); margin: 10px; border-radius: 8px;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarCenteredExample"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="@Url.Action("BrandDashboard", "Profiles")">Dashboard</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="@Url.Action("Index", "BrandProducts")">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="@Url.Action("Edit", "Brands")">Settings</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Details</a>
+        </li>
+        
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+
+<h2 class="text-center textc">Details</h2>
+<hr />
+<div class="row d-flex justify-content-center" style="margin: 10px;">
+    <div class="col-md-8" style="background-color: #0C072A; border-radius: 16px;">
+        <form asp-action="Edit" class="m-4 textc">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group" style="display: none">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display: none">
+                <label asp-for="EmailAdd" class="control-label"></label>
+                <input asp-for="EmailAdd" class="form-control" />
+                <span asp-validation-for="EmailAdd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wallet" class="control-label"></label>
+                <input asp-for="Wallet" class="form-control" readonly="readonly"/>
+                <span asp-validation-for="Wallet" class="text-danger"></span>
+                <br>
+
+                <a href="@Url.Action("ConnectBrandWallet", "Profiles")" class="btn btn-primary p-2" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;">Change Wallet</a>
+ 
+            </div>
+            <div class="form-group">
+                <br>
+                <label asp-for="TwitterUsername" class="control-label"></label>
+                <input asp-for="TwitterUsername" class="form-control" />
+                <span asp-validation-for="TwitterUsername" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiscordUsername" class="control-label"></label>
+                <input asp-for="DiscordUsername" class="form-control" />
+                <span asp-validation-for="DiscordUsername" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompanyName" class="control-label"></label>
+                <input asp-for="CompanyName" class="form-control" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompanyAge" class="control-label"></label>
+                <input asp-for="CompanyAge" class="form-control" />
+                <span asp-validation-for="CompanyAge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompanyDetails" class="control-label"></label>
+                <input asp-for="CompanyDetails" class="form-control" />
+                <span asp-validation-for="CompanyDetails" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Website" class="control-label"></label>
+                <input asp-for="Website" class="form-control" />
+                <span asp-validation-for="Website" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Twitter" class="control-label"></label>
+                <input asp-for="Twitter" class="form-control" />
+                <span asp-validation-for="Twitter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Facebook" class="control-label"></label>
+                <input asp-for="Facebook" class="form-control" />
+                <span asp-validation-for="Facebook" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Instagram" class="control-label"></label>
+                <input asp-for="Instagram" class="form-control" />
+                <span asp-validation-for="Instagram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiscordInvite" class="control-label"></label>
+                <input asp-for="DiscordInvite" class="form-control" />
+                <span asp-validation-for="DiscordInvite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Logo" class="control-label"></label>
+                <input asp-for="Logo" class="form-control" />
+                <span asp-validation-for="Logo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Country" class="control-label"></label>
+                <input asp-for="Country" class="form-control" />
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="City" class="control-label"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group text-center">
+                <input type="submit" value="Save" class="btn btn-primary" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

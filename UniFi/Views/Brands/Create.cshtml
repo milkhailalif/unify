@@ -1,0 +1,83 @@
+﻿@model UniFi.Models.Brand
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .textc {
+        color: whitesmoke;
+    }
+
+</style>
+
+<h1 class="text-center textc">Brand</h1>
+
+<h4 class="text-center textc">Settings</h4>
+<hr />
+<div class="row d-flex justify-content-center" style="margin: 10px;">
+    <div class="col-md-8" style="background-color: #0C072A; border-radius: 16px;">
+        <form asp-action="Create" class="m-5 textc">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group" style="display: none">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" value="None"/>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisplayName" class="control-label"></label>
+                <input asp-for="DisplayName" class="form-control" />
+                <span asp-validation-for="DisplayName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisplayText" class="control-label"></label>
+                <input asp-for="DisplayText" class="form-control" />
+                <span asp-validation-for="DisplayText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrimaryColor" class="control-label"></label>
+                <input asp-for="PrimaryColor" class="form-control form-control-color" type="color" value="#014594"/>
+                <span asp-validation-for="PrimaryColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccentColor" class="control-label"></label>
+                <input asp-for="AccentColor" class="form-control form-control-color" type="color" value="#FF840E"/>
+                <span asp-validation-for="AccentColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TextColor" class="control-label"></label>
+                <input asp-for="TextColor" class="form-control form-control-color" type="color" value="#fafafa"/>
+                <span asp-validation-for="TextColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BackgroundColor" class="control-label"></label>
+                <input asp-for="BackgroundColor" class="form-control form-control-color" type="color" value="#0C072A"/>
+                <span asp-validation-for="BackgroundColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BackgroundImage" class="control-label"></label>
+                <input asp-for="BackgroundImage" class="form-control" />
+                <span asp-validation-for="BackgroundImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BackgroundImage1" class="control-label"></label>
+                <input asp-for="BackgroundImage1" class="form-control" />
+                <span asp-validation-for="BackgroundImage1" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="BackgroundVideo" class="control-label"></label>
+                <input asp-for="BackgroundVideo" class="form-control" />
+                <span asp-validation-for="BackgroundVideo" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group text-center my-2">
+                <input type="submit" value="Next" class="btn btn-primary px-4" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px; width: 240px;"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

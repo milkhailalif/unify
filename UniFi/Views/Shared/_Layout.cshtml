@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uni-fy</title>
+    <link rel="icon" type="image/x-icon" href="~/images/a2.ico">
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UniFi.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet"> *@
+
+   <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/all.min.css" rel="stylesheet">
+    <link href="~/assets/css/fontawesome.css" rel="stylesheet">
+    <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/assets/css/venobox.min.css" rel="stylesheet">
+    <link href="~/assets/css/aos.css" rel="stylesheet">
+    <link href="~/assets/css/nice-select.css" rel="stylesheet">
+    <link href="~/assets/css/animate.css" rel="stylesheet">
+    <link href="~/assets/css/slick.css" rel="stylesheet">
+    <link href="~/assets/css/default.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="cross" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fal fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="offcanva__menu">
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Products">PRODUCTS</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Services">SERVICES</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Brands">BRAND PAGES</a></li>
+                    <partial name="_LoginPartialM" />
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--main--heaedr--area--start-->
+    <div class="main__header">
+        <div class="container">
+            <div class="mrow">
+                <div class="col-lg-12">
+                    <div class="main__header__wrap">
+                        <div class="main__header__menu">
+                            <ul>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Products">PRODUCTS</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Services">SERVICES</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Brands">BRAND PAGES</a></li>
+                            </ul>
+                        </div>
+                        <div class="main__header__logo" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
+                            <a href="/"><img src="~/assets/img/logo.png" alt=""></a>
+                        </div>
+                        <div class="main__header__ri">
+                            
+                                @* <ul>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dashboard
+                                        </a>
+                                        <ul class="dropdown-menu" style="background-color: #215BA0;" aria-labelledby="navbarDropdown">
+                                            <li><a asp-area="" asp-controller="Profiles" asp-action="AffilliateDashboard">&nbsp;&nbsp;&nbsp;Affilliate</a></li>
+                                            <li><a asp-area="" asp-controller="Profiles" asp-action="BrandDashboard">&nbsp;&nbsp;&nbsp;Brand</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul> *@
+                                <partial name="_LoginPartial" />
+                            
+                            @* <div class="main___header__btn">
+                                <partial name="_LoginPartial" />
+                                
+                            </div> *@
+                            <div class="header__bar">
+                                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fal fa-bars"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--main--heaedr--area--end-->
+
+            @RenderBody()
+
+
+
+@*  <footer class="py-5 footer" style="background-color: #353073;">
+      <div class="row">
+           <div class="col-2">
+               <h5>admin@unify.us</h5>
+           </div>
+           <div class="col-4 float-end">
+               <a class="btn btn-primary w-25" asp-area="Identity" asp-page="/Account/Register" style="background-color: #FCD9BB; border-color: #FF840E; color: #FF840E; border-radius: 12px;">Join UniFY</a>
+           </div> 
+      </div>
+    
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+
+        <div class="row">
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+
+      </div>
+
+      <div class="col-4 offset-1">
+
+      </div>
+    </div>
+
+      <div class="float-end">
+            <a href="https://twitter.com/UniFy_io/" target="_blank" style="color: #FF840E;"><i class="fa-brands fa-twitter fa-xl p-2"></i></a>
+            <a href="https://discord.gg/ZSJcQ4dYzK" target="_blank" style="color: #FF840E;"><i class="fa-brands fa-discord fa-xl p-2"></i></a>
+            <a href="https://www.instagram.com/uni_fy_io/" target="_blank" style="color: #FF840E;"><i class="fa-brands fa-instagram fa-xl p-2"></i></a>
+            </div>
+    </div>
+  </footer>*@
+
+    
+    <!--footer--aera--start-->
+    <div class="footer__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__widget">
+                        <div class="footer__top" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                            <a href="#!"><img src="~/assets/img/footer-logo.svg" alt=""></a>
+                            <p>
+                                Aggregation Engagement Growth
+                            </p>
+                        </div>
+                        <div class="footer__mid" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1200">
+                            <div class="footer__mid__tx">
+                                <h1>Let’s Talk</h1>
+                                <a href="#!">hello@uni-fy.us</a>
+                            </div>
+                            <div class="footer__mid__bt">
+                                <a asp-area="Identity" asp-page="/Account/Register" class="style--btn">Join Uni-Fy</a>
+                            </div>
+                        </div>
+                        <div class="footer__btm">
+                            <div class="footer__btm__lf">
+                                <div class="footer__menu">
+                                    <ul>
+                                        <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+                                        <li><a asp-area="" asp-controller="Home" asp-action="Products">PRODUCTS</a></li>
+                                        <li><a asp-area="" asp-controller="Home" asp-action="Services">SERVICES</a></li>
+                                        <li><a asp-area="" asp-controller="Home" asp-action="Brands">BRAND PAGES</a></li>
+                                        <li><a asp-area="Identity" asp-page="/Account/Login">LOGIN</a></li>
+                                        <li><a asp-area="Identity" asp-page="/Account/Register">SIGN UP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__follow">
+                                <p>Follow Us</p>
+                                <div class="footer__social ">
+                                    <a href="https://twitter.com/UniFy_io/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="https://discord.gg/ZSJcQ4dYzK"><i class="fa-brands fa-discord"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCjvaWmNCxPdq3UXaHB34DCQ"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://www.tiktok.com/@@unify_us/"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="https://www.instagram.com/uni_fy_io/"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer--aera--end-->
+
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> *@
+    <script src="https://kit.fontawesome.com/86d2cf5cc5.js" crossorigin="anonymous"></script>
+    @* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> *@
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/Popper.js"></script>
+    <script src="~/assets/js/jquery.nice-select.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/venobox.min.js"></script>
+    <script src="~/assets/js/aos.js"></script>
+    <script src="~/assets/js/jquery.sticky.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script>
+  AOS.init();
+  var clipboard = new ClipboardJS('.btn-copy');
+</script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

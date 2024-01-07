@@ -1,0 +1,180 @@
+﻿@model UniFi.Models.Email
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<br/>
+<br/>
+<h1 class="text-center" style="font-size: 50px">Uni-Fy</h1>
+<div style="text-align: left; top: 0px; position: absolute;"><img src="images/a2.gif" width="150" alt="My Image" /></div>
+
+
+@*<div class="row justify-content-center">
+<a class="btnGlow" href="#Email">Get Early Access</a>
+</div>*@
+
+<div class="text-center" data-aos="zoom-in" style="">
+
+<div class="row row-cols-1 row-cols-md-1" id="Email">
+<div class="col">
+
+<div id="2" style="">
+        <img class="resImg" src="images/a2.gif" alt="" />
+</div>
+
+<div id="1" style="">
+        <img class="resImg" src="images/a11.gif" alt="" />
+</div>
+
+</div>
+</div>
+
+<div class="row justify-content-center fade-in one mt-n1" style="">
+    <div class="col-md-4">
+        <form asp-action="Create" asp-controller="Emails">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input id="box" asp-for="EmailAdd" class="form-control" style="" onclick="myFunction()" placeholder="Enter Email"/>
+                <span asp-validation-for="EmailAdd" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group fade-in two">
+                <input class="btnGlow" type="submit" value="Get Early Access"/>
+            </div>
+        </form>
+        <br/>
+   @* <h5 class="fade-in three p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+      As an individual: Unlock the Potential of Web3 and Monetize Your Passions with On-Chain E-Commerce, Rewarding Community Engagement, and Seamless Personal development.
+      </h5>
+    </div>*@
+</div>
+</div>
+
+</div>
+@*<div class="row row-cols-1 row-cols-md-1">
+  <div class="col mb-4">
+    <div class="card h-100" style="background-color: rgba(255, 255, 255, 0.2);">
+      <div class="card-body">
+        <h1 class="card-text text-center">Aggregation, Engagement and Growth...</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card h-100" style="background-color: rgba(255, 255, 255, 0.2);">
+      <div class="card-body">
+        <h5 class="card-title">What is Uni-Fy?</h5>
+        <p class="card-text">Uni-Fi is your one-stop shop, aggregating product and service providers from multiple chains. Whether you're an established project or new to web3 you can find brands or establish your own with ease.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100" style="background-color: rgba(255, 255, 255, 0.2);">
+      <div class="card-body">
+        <h5 class="card-title">Key features</h5>
+        <p class="card-text">- Free on-chain ecommerce store with built in community marketing structure <br>
+- Full analytics dashboard for stores and community marketers <br>
+- Engage, track performance and reward your community on-chian <br>
+- Powerful lead generation system <br>
+- Promote your Web3 brand page and earn from purchases whether it's your store or a Uni-Fy partner store you get paid</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="row row-cols-1 row-cols-md-1">
+  <div class="col mb-4">
+    <div class="card h-100" style="background-color: rgba(255, 255, 255, 0.2);">
+      <div class="card-body">
+        <h4 class="card-text text-center">Want to be the first to know when we go live? Leave us your email and join our discord to stay up to date</h4>
+      </div>
+    </div>
+  </div>
+</div>*@
+<br>
+<br>
+
+<div class="row justify-content-center text-center" style="">
+<h2>F.A.Q</h2>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item" style="background-color: rgba(255, 255, 255, 0.2);">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" style="background-color: rgba(255, 255, 255, 0.2); color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        What is Uni-Fy?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Uni-Fy is a Web3 platform that aims to help new and existing businesses gain exposure to the emerging blockchain technology and its potential for growth and development. With its state-of-the-art platform, Uni-Fy offers a unique toolkit for lead generation and community marketing, helping businesses to drive sales and grow their audience through incentivizing and rewarding community members.</div>
+    </div>
+  </div>
+  <div class="accordion-item" style="background-color: rgba(255, 255, 255, 0.2);">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" style="background-color: rgba(255, 255, 255, 0.2); color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        How can businesses benefit from Uni-Fy?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Uni-Fy allows businesses to generate on-chain Brand pages with built-in
+community marketing structures and trustless automated pay-outs. It helps businesses drive sales, grow with their community, broaden their audience, and diversify income opportunities through the power of the Blockchain.</div>
+    </div>
+  </div>
+  <div class="accordion-item" style="background-color: rgba(255, 255, 255, 0.2);">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" style="background-color: rgba(255, 255, 255, 0.2); color: white;" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        What advantages does Uni-Fy offer to community members and affiliates?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Community marketers can earn rewards for their contributions and referrals, join a vibrant and inclusive community, become a valuable asset to brands and businesses while enjoying secure automated pay-outs.</div>
+    </div>
+  </div>
+  <div class="accordion-item" style="background-color: rgba(255, 255, 255, 0.2);">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" style="background-color: rgba(255, 255, 255, 0.2); color: white;" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        How does Uni-Fy address the challenges of the web3 ecosystem?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Uni-Fy provides a streamlined solution for businesses by reducing the complexity of navigating the web3 ecosystem. It offers a one stop shop for finding service providers and product suppliers, eliminates the need to search through multiple channels, and ensures service quality through incentivized engagement and performance tracking.</div>
+    </div>
+  </div>
+  <br>
+  <br>
+</div>
+</div>
+
+
+
+<script>
+
+    var img1 = document.getElementById("1");
+    var img2 = document.getElementById("2");
+    var elem = document.getElementById("box");
+
+    if (elem === document.activeElement) {
+    img1.style.display = "none";
+    img2.style.display = "block";
+}
+else{
+    img1.style.display = "block";
+    img2.style.display = "none";
+}
+    
+
+function myFunction() {
+  var x = document.getElementById("1");
+  var y = document.getElementById("2");
+
+    x.style.display = "none";
+    y.style.display = "block";
+
+}
+
+</script>

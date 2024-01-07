@@ -1,0 +1,85 @@
+﻿@model IEnumerable<UniFi.Models.Brand>
+
+@{
+    ViewData["Title"] = "Brands";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .card.text-center.mx-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .brand_page_de .card-img-top {
+        max-width: 70%;
+    }
+
+    .brand_page_de .card.text-center {
+        padding: 13px;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .brand_page_de a {
+        height: 83px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-body {
+        width: 50%;
+    }
+    .brand_page_de .card-title.textc {
+        font-size: 17px;
+    } 
+
+    .card-img, .card-img-bottom, .card-img-top {
+        max-width: 500px;
+    }
+
+    .card.text-center.mx-2 {
+        display: flex;
+        min-height: 452px !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* SM Small Device :320px. */
+@@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .card.text-center.mx-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+</style>
+@await Html.PartialAsync("_Brands", Model)
+
+<br>
+<br>
+<h1 class="text-center textc">Brands</h1>
+<br>
+<br>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4 brand_page_de" style="margin: 10px;">
+        @foreach (var item in Model)
+        {
+            <div class="col" style="color: white">
+                <div class="card text-center" style="background-color: #0C072A; border-radius: 16px;">
+                    <a href="@Url.Action("Home", "Brands", new { @id = item.DisplayName})"><img src="@Url.Content(item.BrandImage)" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title textc">@Html.DisplayFor(modelItem => item.DisplayName)</h5>
+                        @*  <a href="@Url.Action("Buy", "Cart", new { id = item.Id })" class="btn btn-primary" style="border-radius: 12px; border-color: #EB4823; background-color: #FCD9BB; color: #EB4823;">Add to cart</a>
+                    <a href="@Url.Action("ProductDetails", "Brands", new { id = item.Id })" class="btn btn-primary" style="background-color: #215BA0; border-color: #215BA0; border-radius: 12px;">View Product</a> *@
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
